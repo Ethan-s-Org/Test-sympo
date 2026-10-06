@@ -1960,10 +1960,6 @@ if (warpBtn) {
     warpBtn.addEventListener('click', () => {
         if (isHyperdriveBoosting) return;
         isHyperdriveBoosting = true;
-        triggerWarpSound();
-
-        warpBtn.innerHTML = `WARP CONVERGENCE ACTIVE...`;
-        warpBtn.classList.add('animate-pulse');
 
         gsap.to(camera.position, {
             z: "-=350",
@@ -1976,8 +1972,6 @@ if (warpBtn) {
                     ease: "power2.out",
                     onComplete: () => {
                         isHyperdriveBoosting = false;
-                        warpBtn.innerHTML = `⚡ ENGAGE HYPERDRIVE`;
-                        warpBtn.classList.remove('animate-pulse');
                     }
                 });
             }
