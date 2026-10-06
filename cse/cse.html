@@ -65,8 +65,8 @@
         </p>
 
         <div class="stats">
-          <div><b>05</b><small>CHAMPIONSHIP EVENTS</small></div>
-          <div><b>₹150</b><small>REGISTRATION FEE</small></div>
+          <div><b>06</b><small>CHAMPIONSHIP EVENTS</small></div>
+          <div><b>₹100</b><small>ENTRY FEE (₹50/EVENT)</small></div>
         </div>
 
         <button class="cyber-btn" onclick="openRegisterModal('CSE Department')">
@@ -107,62 +107,79 @@
       <div class="section-heading">
         <span>// COMPETITION TRACKS</span>
         <h2>OFFICIAL <strong>EVENTS</strong></h2>
-        <p>Five high-intensity competition modules engineered by the Department of Computer Science & Engineering.</p>
+        <p>Six high-intensity competition modules engineered by the Department of Computer Science &amp; Engineering.</p>
       </div>
 
       <div class="events-grid">
+        <!-- EVENT 01: FUTURE MINDS -->
         <article class="event-card">
-          <div class="event-top"><b>01</b><span>RESEARCH // PRESENTATION</span></div>
-          <h3>PAPER PRESENTATION</h3>
-          <p>Present research breakthroughs in Cloud Computing, Quantum Computing, Distributed Systems, Web3 or Neural Interfaces.</p>
-          <div class="meta"><span>◷ 1–3 MEMBERS</span><span>▣ 10 OCT 2026</span></div>
+          <div class="event-top"><b>01</b><span>IDEATHON // INNOVATION</span></div>
+          <h3>FUTURE MINDS <i>(IDEATHON)</i></h3>
+          <p>Pitch transformative technological ideas, creative problem-solving concepts and visionary software prototypes.</p>
+          <div class="meta"><span>◷ 1–3 MEMBERS</span><span>◈ 17 OCT 2026</span></div>
           <div class="actions">
-            <button class="outline-btn" onclick="openRulesModal('Paper Presentation','10:45 AM - 01:00 PM','CSE Seminar Hall 1',['Max presentation time: 8 mins + 2 mins Q&A','Submit PPT & abstract by Oct 10, 2026','Bring presentation on USB drive as fallback','Original work only; plagiarism strictly penalized'])">VIEW RULES</button>
-            <button class="cyber-btn small" onclick="openRegisterModal('Paper Presentation')">REGISTER</button>
+            <button class="outline-btn" onclick="openRulesModal('Future Minds (Ideathon)','10:30 AM - 12:30 PM','CSE Seminar Hall 1',['Team size: 1 to 3 members','Pitch format: 7 mins presentation + 3 mins Q&A','Innovative problem solving and feasibility evaluation','Prototypes or slide decks are permitted'])">VIEW RULES</button>
+            <button class="cyber-btn small" onclick="openRegisterModal('Future Minds (Ideathon)')">REGISTER</button>
           </div>
         </article>
 
+        <!-- EVENT 02: HACKATHON -->
         <article class="event-card">
-          <div class="event-top"><b>02</b><span>PRODUCT // INTERFACE</span></div>
-          <h3>UI UX DESIGN <i>(VIBE CODING)</i></h3>
-          <p>Turn a real-time prompt into an immersive interface using Figma, Penpot or pure front-end code.</p>
-          <div class="meta"><span>◷ 90 MINUTES</span><span>◇ FIGMA / HTML-CSS</span></div>
+          <div class="event-top"><b>02</b><span>HACKATHON // SPRINT</span></div>
+          <h3>HACKATHON</h3>
+          <p>Intense software development sprint building rapid, impactful solutions to real-world engineering problem statements.</p>
+          <div class="meta"><span>◷ 2–4 MEMBERS</span><span>&lt;/&gt; CODE SPRINT</span></div>
           <div class="actions">
-            <button class="outline-btn" onclick="openRulesModal('UI UX Design (Vibe Coding)','11:00 AM - 12:30 PM','Computer Lab 3',['Theme disclosed at start of round','Evaluation on hierarchy, accessibility and animations','Figma, Penpot or front-end code permitted','Individual or Duo participation'])">VIEW RULES</button>
-            <button class="cyber-btn small" onclick="openRegisterModal('UI UX Design (Vibe Coding)')">REGISTER</button>
+            <button class="outline-btn" onclick="openRulesModal('Hackathon','10:45 AM - 01:30 PM','Advanced Computing Lab',['Team size: 2 to 4 members','Problem statement will be assigned at event kick-off','Bring your own laptops and development environments','Evaluated on architecture, execution and presentation'])">VIEW RULES</button>
+            <button class="cyber-btn small" onclick="openRegisterModal('Hackathon')">REGISTER</button>
           </div>
         </article>
 
+        <!-- EVENT 03: PROJECT EXPO -->
         <article class="event-card">
-          <div class="event-top"><b>03</b><span>APP // DEVELOPMENT</span></div>
-          <h3>MOBILE APPLICATION DEVELOPMENT</h3>
-          <p>Demonstrate deployed mobile solutions across Flutter, React Native, Kotlin or Swift with live code review.</p>
-          <div class="meta"><span>◷ LIVE DEMO</span><span>▣ ANDROID / IOS</span></div>
+          <div class="event-top"><b>03</b><span>PROJECT // EXPO</span></div>
+          <h3>PROJECT EXPO <i>(MOBILE APPLICATION DEV)</i></h3>
+          <p>Demonstrate deployed mobile solutions across Flutter, React Native, Kotlin, Swift or Android with live demo.</p>
+          <div class="meta"><span>◷ 1–3 MEMBERS</span><span>▣ ANDROID / IOS</span></div>
           <div class="actions">
-            <button class="outline-btn" onclick="openRulesModal('Mobile Application Development','11:00 AM - 01:00 PM','Advanced Software Lab',['Bring personal testing device or emulator','Present live APK / TestFlight / Expo build','Code walkthrough by judges','Team of 1 to 2 members'])">VIEW RULES</button>
-            <button class="cyber-btn small" onclick="openRegisterModal('Mobile Application Development')">REGISTER</button>
+            <button class="outline-btn" onclick="openRulesModal('Project Expo (Mobile Application Development)','11:00 AM - 01:00 PM','Software Engineering Lab',['Bring personal testing device or emulator','Present live APK, TestFlight, or Expo build','Code walkthrough and feature demonstration evaluated by judges','Team of 1 to 3 members'])">VIEW RULES</button>
+            <button class="cyber-btn small" onclick="openRegisterModal('Project Expo (Mobile Application Development)')">REGISTER</button>
           </div>
         </article>
 
+        <!-- EVENT 04: SNAP WITH AI -->
         <article class="event-card">
-          <div class="event-top"><b>04</b><span>COMPETITIVE // PROGRAMMING</span></div>
-          <h3>SPEED CODING</h3>
-          <p>Race against time to debug, write and execute error-free code across escalating test scenarios.</p>
-          <div class="meta"><span>◷ 2 ROUNDS</span><span>&lt;/&gt; C / C++ / JAVA / PYTHON</span></div>
+          <div class="event-top"><b>04</b><span>AI // POSTER MAKING</span></div>
+          <h3>SNAP WITH AI <i>(POSTER MAKING)</i></h3>
+          <p>Harness generative AI image tools and creative prompt craft to design compelling futuristic technical posters.</p>
+          <div class="meta"><span>◷ 60 MINUTES</span><span>◇ GEN AI / POSTER</span></div>
           <div class="actions">
-            <button class="outline-btn" onclick="openRulesModal('Speed Coding','11:15 AM - 12:45 PM','Programming Lab 1',['Individual participation only','No internet lookup during round','Scored on speed, correctness and memory complexity','Tie-breaker based on first full submission timestamp'])">VIEW RULES</button>
-            <button class="cyber-btn small" onclick="openRegisterModal('Speed Coding')">REGISTER</button>
+            <button class="outline-btn" onclick="openRulesModal('Snap with AI (Poster Making)','11:30 AM - 12:45 PM','Graphics & Multimedia Lab',['Theme will be revealed on the spot','Use generative AI platforms and prompt crafting','Judged on creativity, visual appeal, and theme alignment','Individual or duo participation'])">VIEW RULES</button>
+            <button class="cyber-btn small" onclick="openRegisterModal('Snap with AI (Poster Making)')">REGISTER</button>
           </div>
         </article>
 
+        <!-- EVENT 05: CYBER HUNT -->
         <article class="event-card">
-          <div class="event-top"><b>05</b><span>PROBLEM // SOLVING</span></div>
-          <h3>ALGORITHM CHALLENGE</h3>
-          <p>Tackle Dynamic Programming, Graph Theory, Greedy approaches and Tree traversal brainteasers.</p>
-          <div class="meta"><span>◷ DSA + LOGIC</span><span>◎ MODERATE → ADVANCED</span></div>
+          <div class="event-top"><b>05</b><span>TECH // QUIZ</span></div>
+          <h3>CYBER HUNT <i>(TECHNICAL QUIZ)</i></h3>
+          <p>High-voltage technical quiz testing computer science fundamentals, logic, algorithms, and cybersecurity.</p>
+          <div class="meta"><span>◷ 2 ROUNDS</span><span>◎ TECH TRIVIA</span></div>
           <div class="actions">
-            <button class="outline-btn" onclick="openRulesModal('Algorithm Challenge','02:00 PM - 03:30 PM','Computer Center 2',['Pen & paper blueprint followed by implementation','Team of 1 or 2 members','Judged on algorithmic optimality and Big-O','Top 5 teams qualify for rapid-fire finals'])">VIEW RULES</button>
-            <button class="cyber-btn small" onclick="openRegisterModal('Algorithm Challenge')">REGISTER</button>
+            <button class="outline-btn" onclick="openRulesModal('Cyber Hunt (Technical Quiz)','01:30 PM - 02:45 PM','CSE Seminar Hall 2',['Round 1: Rapid-fire prelims across core CS concepts','Round 2: Buzzer / deduction showdown for finalists','Team of 1 to 2 members','Mobile phones strictly prohibited during the quiz'])">VIEW RULES</button>
+            <button class="cyber-btn small" onclick="openRegisterModal('Cyber Hunt (Technical Quiz)')">REGISTER</button>
+          </div>
+        </article>
+
+        <!-- EVENT 06: AI PROMPT BATTLE -->
+        <article class="event-card">
+          <div class="event-top"><b>06</b><span>PROMPT // BATTLE</span></div>
+          <h3>AI PROMPT BATTLE <i>(USING CLAUDE AI)</i></h3>
+          <p>Compete head-to-head in crafting advanced prompt strategies and multi-turn workflows using Anthropic's Claude AI.</p>
+          <div class="meta"><span>◷ 60 MINUTES</span><span>⚡ CLAUDE AI</span></div>
+          <div class="actions">
+            <button class="outline-btn" onclick="openRulesModal('AI Prompt Battle (Using Claude AI)','02:00 PM - 03:30 PM','Computer Center 1',['Task objectives and evaluation criteria disclosed at start','Hands-on interaction with Claude AI platform','Scored on prompt conciseness, precision, and output quality','Individual participation'])">VIEW RULES</button>
+            <button class="cyber-btn small" onclick="openRegisterModal('AI Prompt Battle (Using Claude AI)')">REGISTER</button>
           </div>
         </article>
       </div>
@@ -184,9 +201,9 @@
         </div>
         <div class="coord-card glass">
           <span>STUDENT CO-ORDINATOR</span>
-          <h3>Mr. S. Venkatajalapathi</h3>
+          <h3>Mr. P. Bhuvankumar</h3>
           <p>Final Year (IV / CSE)</p>
-          <div><a href="tel:6385575445">☎ 63855 75445</a><a href="https://wa.me/916385575445" target="_blank">◉ WHATSAPP</a></div>
+          <div><a href="tel:9342232411">☎ 93422 32411</a><a href="https://wa.me/919342232411" target="_blank">◉ WHATSAPP</a></div>
         </div>
       </div>
     </section>
@@ -198,7 +215,7 @@
       <span class="modal-tag">// OFFICIAL REGISTRATION</span>
       <h2>ACCESS <strong>GRANTED</strong></h2>
       <p id="registerText">Registration for CSE events.</p>
-      <div class="modal-info">REGISTRATION FEE: <strong>₹150/- ONLY</strong></div>
+      <div class="modal-info">ENTRY FEE: <strong>₹100/- (EVENT-WISE: ₹50/-)</strong></div>
       <a class="cyber-btn full" href="https://rpsitsymposium.netlify.app" target="_blank">OPEN REGISTRATION FORM →</a>
     </div>
   </div>

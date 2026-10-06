@@ -233,6 +233,40 @@ window.addEventListener(
 
 
 // ==========================================
+// MODAL HISTORY (MOBILE BACK BUTTON SUPPORT)
+// ==========================================
+
+let isModalHistoryPushed = false;
+
+function isMobileView() {
+  return window.innerWidth <= 900 || /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+}
+
+function pushModalHistory() {
+  if (isMobileView() && !isModalHistoryPushed) {
+    isModalHistoryPushed = true;
+    try {
+      history.pushState({ modalOpen: true }, "");
+    } catch (e) {}
+  }
+}
+
+function closeModalsInternal() {
+  document
+    .querySelectorAll(
+      ".modal-overlay"
+    )
+    .forEach(
+      (modal) => {
+        modal.classList.remove(
+          "open"
+        );
+      }
+    );
+  document.body.style.overflow = "";
+}
+
+// ==========================================
 // REGISTRATION MODAL
 // ==========================================
 
@@ -256,6 +290,7 @@ function openRegisterModal(eventName) {
   document.body.style.overflow =
     "hidden";
 
+  pushModalHistory();
 }
 
 
@@ -324,6 +359,7 @@ function openRulesModal(
   document.body.style.overflow =
     "hidden";
 
+  pushModalHistory();
 }
 
 
@@ -332,25 +368,31 @@ function openRulesModal(
 // ==========================================
 
 function closeModals() {
+  if (isModalHistoryPushed) {
+    isModalHistoryPushed = false;
+    try {
+      history.back();
+    } catch (e) {}
+  }
+  closeModalsInternal();
+}
 
-  document
-    .querySelectorAll(
-      ".modal-overlay"
-    )
-    .forEach(
-      (modal) => {
+window.addEventListener("popstate", () => {
+  if (isModalHistoryPushed) {
+    isModalHistoryPushed = false;
+    closeModalsInternal();
+  } else {
+    const openModal = document.querySelector(".modal-overlay.open");
+    if (openModal && isMobileView()) {
+      closeModalsInternal();
+    }
+  }
+});
 
-        modal.classList.remove(
-          "open"
-        );
-
-      }
-    );
-
-
-  document.body.style.overflow =
-    "";
-
+if (window.history.state && window.history.state.modalOpen) {
+  try {
+    history.replaceState(null, "");
+  } catch (e) {}
 }
 
 

@@ -58,11 +58,32 @@ window.addEventListener("resize",()=>{
   renderer.setSize(innerWidth,innerHeight);
 });
 
+let isModalHistoryPushed = false;
+
+function isMobileView() {
+  return window.innerWidth <= 900 || /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+}
+
+function pushModalHistory() {
+  if (isMobileView() && !isModalHistoryPushed) {
+    isModalHistoryPushed = true;
+    try {
+      history.pushState({ modalOpen: true }, "");
+    } catch (e) {}
+  }
+}
+
+function closeModalsInternal() {
+  document.querySelectorAll(".modal-overlay").forEach(m => m.classList.remove("open"));
+  document.body.style.overflow = "";
+}
+
 function openRegisterModal(eventName){
   document.getElementById("registerText").textContent =
     `You are requesting access for ${eventName}. Continue to the official registration portal.`;
   document.getElementById("registerModal").classList.add("open");
   document.body.style.overflow="hidden";
+  pushModalHistory();
 }
 
 function openRulesModal(title,time,venue,rules){
@@ -72,11 +93,35 @@ function openRulesModal(title,time,venue,rules){
   document.getElementById("rulesBody").innerHTML=rules.map(r=>`<li>${r}</li>`).join("");
   document.getElementById("rulesModal").classList.add("open");
   document.body.style.overflow="hidden";
+  pushModalHistory();
 }
 
 function closeModals(){
-  document.querySelectorAll(".modal-overlay").forEach(m=>m.classList.remove("open"));
-  document.body.style.overflow="";
+  if (isModalHistoryPushed) {
+    isModalHistoryPushed = false;
+    try {
+      history.back();
+    } catch (e) {}
+  }
+  closeModalsInternal();
+}
+
+window.addEventListener("popstate", () => {
+  if (isModalHistoryPushed) {
+    isModalHistoryPushed = false;
+    closeModalsInternal();
+  } else {
+    const openModal = document.querySelector(".modal-overlay.open");
+    if (openModal && isMobileView()) {
+      closeModalsInternal();
+    }
+  }
+});
+
+if (window.history.state && window.history.state.modalOpen) {
+  try {
+    history.replaceState(null, "");
+  } catch (e) {}
 }
 
 document.querySelectorAll(".modal-overlay").forEach(overlay=>{

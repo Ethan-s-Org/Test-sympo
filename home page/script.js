@@ -2251,7 +2251,7 @@ const deptEventsData = {
     cse: {
         code: "01 // CSE ARENA",
         name: "COMPUTER SCIENCE & ENGINEERING",
-        badge: "5 CHAMPIONSHIP EVENTS • 10 OCT 2026",
+        badge: "6 CHAMPIONSHIP EVENTS • 17 OCT 2026",
         arenaUrl: "../cse/cse.html",
         accentColor: "cyan",
         borderClass: "border-cyan-400/50",
@@ -2260,37 +2260,44 @@ const deptEventsData = {
         events: [
             {
                 num: "01",
-                tag: "RESEARCH // PRESENTATION",
-                title: "PAPER PRESENTATION",
-                desc: "Present research breakthroughs in Cloud Computing, Quantum Computing, Distributed Systems, Web3 or Neural Interfaces.",
+                tag: "IDEATHON // INNOVATION",
+                title: "FUTURE MINDS (IDEATHON)",
+                desc: "Pitch transformative technological ideas, creative problem-solving concepts and visionary software prototypes.",
                 rulesLink: "../cse/cse.html#events"
             },
             {
                 num: "02",
-                tag: "PRODUCT // INTERFACE",
-                title: "UI UX DESIGN (VIBE CODING)",
-                desc: "Turn a real-time prompt into an immersive interface using Figma, Penpot or pure front-end code.",
+                tag: "HACKATHON // SPRINT",
+                title: "HACKATHON",
+                desc: "Intense software development sprint building rapid, impactful solutions to real-world engineering problem statements.",
                 rulesLink: "../cse/cse.html#events"
             },
             {
                 num: "03",
-                tag: "APP // DEVELOPMENT",
-                title: "MOBILE APPLICATION DEVELOPMENT",
-                desc: "Demonstrate deployed mobile solutions across Flutter, React Native, Kotlin or Swift with live code review.",
+                tag: "PROJECT // EXPO",
+                title: "PROJECT EXPO (MOBILE APPLICATION DEVELOPMENT)",
+                desc: "Demonstrate deployed mobile applications across Flutter, React Native, Kotlin, Swift, or Android with live demo.",
                 rulesLink: "../cse/cse.html#events"
             },
             {
                 num: "04",
-                tag: "COMPETITIVE // PROGRAMMING",
-                title: "SPEED CODING",
-                desc: "Race against time to debug, write and execute error-free code across escalating test scenarios.",
+                tag: "AI // POSTER MAKING",
+                title: "SNAP WITH AI (POSTER MAKING)",
+                desc: "Harness generative AI image tools and creative prompt craft to create compelling futuristic technical posters.",
                 rulesLink: "../cse/cse.html#events"
             },
             {
                 num: "05",
-                tag: "PROBLEM // SOLVING",
-                title: "ALGORITHM CHALLENGE",
-                desc: "Tackle Dynamic Programming, Graph Theory, Greedy approaches and Tree traversal brainteasers.",
+                tag: "TECH // QUIZ",
+                title: "CYBER HUNT (TECHNICAL QUIZ)",
+                desc: "High-voltage technical quiz testing computer science fundamentals, logic, algorithms, and cybersecurity.",
+                rulesLink: "../cse/cse.html#events"
+            },
+            {
+                num: "06",
+                tag: "PROMPT // BATTLE",
+                title: "AI PROMPT BATTLE (USING CLAUDE AI)",
+                desc: "Compete head-to-head in crafting advanced prompt strategies and multi-turn workflows using Anthropic's Claude AI.",
                 rulesLink: "../cse/cse.html#events"
             }
         ]
@@ -2298,7 +2305,7 @@ const deptEventsData = {
     aids: {
         code: "02 // AI & DS ARENA",
         name: "ARTIFICIAL INTELLIGENCE & DATA SCIENCE",
-        badge: "5 INTELLIGENT MODULES • 10 OCT 2026",
+        badge: "5 INTELLIGENT MODULES • 17 OCT 2026",
         arenaUrl: "../ai&ds/aids.html",
         accentColor: "yellow",
         borderClass: "border-yellow-400/50",
@@ -2308,36 +2315,36 @@ const deptEventsData = {
             {
                 num: "01",
                 tag: "RESEARCH // PRESENTATION",
-                title: "PRO-PITCH-PROMPT TO APP",
-                desc: "Pitch next-generation generative AI, prompt engineering applications and automated neural workflows.",
+                title: "PAPER PRESENTATION",
+                desc: "Present research breakthroughs in Artificial Intelligence, Machine Learning, Deep Learning, NLP, and Data Science.",
                 rulesLink: "../ai&ds/aids.html#events"
             },
             {
                 num: "02",
-                tag: "PRODUCT // INTERFACE",
-                title: "BUG BUSTER-CODE DEBUGGING",
-                desc: "Hunt down algorithmic anomalies, optimize AI inference pipelines and fix flawed code under pressure.",
+                tag: "PROMPT // PRODUCT",
+                title: "PRO-PITCH (PROMPT TO APP)",
+                desc: "Harness prompt engineering and rapid AI prototyping to pitch working applications from prompt concepts.",
                 rulesLink: "../ai&ds/aids.html#events"
             },
             {
                 num: "03",
-                tag: "APP // DEVELOPMENT",
-                title: "PAPER PRESENTATION",
-                desc: "Showcase groundbreaking papers on Deep Learning, NLP, Autonomous Robotics and Computer Vision.",
+                tag: "DATA // VIZ",
+                title: "VIZ CRAFT (DATA VISUALIZATION)",
+                desc: "Transform complex raw data into interactive, intuitive, and insightful visual dashboards and charts.",
                 rulesLink: "../ai&ds/aids.html#events"
             },
             {
                 num: "04",
-                tag: "COMPETITIVE // PROGRAMMING",
-                title: "INNOVATION SHOWCASE-PROJECT EXPO",
-                desc: "Demonstrate working AI models, intelligent hardware-software IoT prototypes and predictive analytics.",
+                tag: "MULTI-LANG // CODING",
+                title: "CODE FLEX (MULTI - LANGUAGE CODING CHALLENGE)",
+                desc: "Test versatility and polyglot programming across multiple coding languages under escalating time pressure.",
                 rulesLink: "../ai&ds/aids.html#events"
             },
             {
                 num: "05",
-                tag: "PROBLEM // SOLVING",
-                title: "MIND MATRIX-QUIZ",
-                desc: "High-octane AI/DS technical quiz spanning data science logic, linear algebra and neural architecture.",
+                tag: "INTELLIGENCE // QUIZ",
+                title: "COGNIX (QUIZ)",
+                desc: "Battle through challenging brainteasers, neural network concepts, probability, and data science logic.",
                 rulesLink: "../ai&ds/aids.html#events"
             }
         ]
@@ -2345,7 +2352,7 @@ const deptEventsData = {
     it: {
         code: "03 // IT ARENA",
         name: "INFORMATION TECHNOLOGY",
-        badge: "5 INNOVATIVE MODULES • 10 OCT 2026",
+        badge: "6 INNOVATIVE MODULES • 17 OCT 2026",
         arenaUrl: "../it/it.html",
         accentColor: "darkblue",
         borderClass: "border-blue-500/50",
@@ -2354,37 +2361,44 @@ const deptEventsData = {
         events: [
             {
                 num: "01",
-                tag: "TECHNICAL // TALK",
-                title: "PAPER PRESENTATION (TECH TALKS)",
-                desc: "Present on Cloud Native DevOps, 5G/6G paradigms, edge telemetry, and enterprise microservices.",
+                tag: "RESEARCH // PRESENTATION",
+                title: "PAPER PRESENTATION: INNO PAPERS",
+                desc: "The Spectrum of Innovation — Present original papers in cloud computing, DevOps, web technologies, and modern IT.",
                 rulesLink: "../it/it.html#events"
             },
             {
                 num: "02",
-                tag: "INNOVATION // ARENA",
-                title: "PROJECT EXPO (INNOVATION ARENA)",
-                desc: "Showcase software systems, cloud dashboards, IoT smart grids, and progressive web apps to technical jury.",
+                tag: "AI // PROMPT BATTLE",
+                title: "CLAUDE PROMPT BATTLE",
+                desc: "Harness Claude AI with strategic prompt engineering to generate optimal code, problem solutions, and creative outputs.",
                 rulesLink: "../it/it.html#events"
             },
             {
                 num: "03",
-                tag: "VISUAL // VISION",
-                title: "POSTER PRESENTATION (VISUAL VISION)",
-                desc: "Synthesize emerging technological paradigms into visually compelling infographical charts and posters.",
+                tag: "WEB // ARCHITECTURE",
+                title: "WEB ARCHITECTS",
+                desc: "Architect and build modern, responsive, high-performance web applications using cutting-edge front-end paradigms.",
                 rulesLink: "../it/it.html#events"
             },
             {
                 num: "04",
                 tag: "CODE // DEBUGGING",
-                title: "CODE DEBUGGING (CODE STROM)",
-                desc: "Unravel spaghetti code, locate compilation and runtime faults, and optimize degraded codebases.",
+                title: "CODE DEBUGGING",
+                desc: "Unravel spaghetti code, locate compilation and runtime faults, and optimize degraded codebases under pressure.",
                 rulesLink: "../it/it.html#events"
             },
             {
                 num: "05",
-                tag: "FRONTEND // MASTERY",
-                title: "WEB DESIGN (WEB WIZARDS)",
-                desc: "Build responsive, ultra-slick landing pages from scratch with modern HTML, CSS, JavaScript, and animations.",
+                tag: "PITCH // DISPLAY",
+                title: "POSTER PITCH",
+                desc: "Pitch creative technical concepts and visionary IT innovations through compelling visual infographics.",
+                rulesLink: "../it/it.html#events"
+            },
+            {
+                num: "06",
+                tag: "PROJECT // SHOWCASE",
+                title: "PROJECT PRESENTATION",
+                desc: "Demonstrate live working IT software systems, enterprise dashboards, and mobile or web applications.",
                 rulesLink: "../it/it.html#events"
             }
         ]
@@ -2392,7 +2406,7 @@ const deptEventsData = {
     ece: {
         code: "04 // ECE ARENA",
         name: "ELECTRONICS & COMMUNICATION ENGINEERING",
-        badge: "5 HARDWARE & EMBEDDED EVENTS • 17 OCT 2026",
+        badge: "6 HARDWARE & EMBEDDED EVENTS • 17 OCT 2026",
         arenaUrl: "../ece/ece.html",
         accentColor: "red",
         borderClass: "border-red-500/50",
@@ -2408,38 +2422,45 @@ const deptEventsData = {
             },
             {
                 num: "02",
-                tag: "PROJECT // INNOVATION",
-                title: "PROTO MANIA",
-                desc: "Showcase innovative electronic prototypes, IoT controllers, and hardware engineering projects.",
+                tag: "PROJECT // EXPO",
+                title: "PROJECT EXPO",
+                desc: "Showcase innovative electronic prototypes, IoT controllers, robotics, and hardware engineering projects.",
                 rulesLink: "../ece/ece.html#events"
             },
             {
                 num: "03",
                 tag: "CIRCUIT // DEBUGGING",
-                title: "CIRCUIT HUNT",
+                title: "CIRCUIT DEBUGGING",
                 desc: "Find circuit errors, analyze electronic schematics and solve real-time hardware debugging challenges.",
                 rulesLink: "../ece/ece.html#events"
             },
             {
                 num: "04",
-                tag: "STARTUP // INNOVATION",
-                title: "STARTUP PITCHING",
-                desc: "Pitch high-impact hardware-tech startups, market-ready embedded devices, and commercial feasibility.",
+                tag: "DRONE // INNOVATION",
+                title: "DRONOVA",
+                desc: "Showcase drone flight dynamics, UAV design, quadcopter automation, and aerial technology innovations.",
                 rulesLink: "../ece/ece.html#events"
             },
             {
                 num: "05",
-                tag: "TECHNICAL // QUIZ",
-                title: "PICTURE REBUS",
-                desc: "Decipher cryptic electronic visual puzzles, technical symbolisms, and component schematics.",
+                tag: "TACTICAL // CHALLENGE",
+                title: "TECH ESCAPE ROOM",
+                desc: "Solve hardware puzzles, decode electronic signals, and unlock encrypted stages to escape the tech lab.",
+                rulesLink: "../ece/ece.html#events"
+            },
+            {
+                num: "06",
+                tag: "HARDWARE // HACKATHON",
+                title: "ECE HACKATHON",
+                desc: "Intense rapid prototyping sprint developing electronic systems, sensor integrations, and embedded hardware solutions.",
                 rulesLink: "../ece/ece.html#events"
             }
         ]
     },
     cyber: {
         code: "05 // CYBER ARENA",
-        name: "CYBER SECURITY",
-        badge: "5 THREAT DEFENSE EVENTS • 10 OCT 2026",
+        name: "COMPUTER SCIENCE & ENGINEERING (CYBER SECURITY)",
+        badge: "6 THREAT DEFENSE EVENTS • 17 OCT 2026",
         arenaUrl: "../cyber/cyber.html",
         accentColor: "orange",
         borderClass: "border-orange-500/50",
@@ -2449,21 +2470,21 @@ const deptEventsData = {
             {
                 num: "01",
                 tag: "RESEARCH // PRESENTATION",
-                title: "PAPER PRESENTATION",
+                title: "CYBER PAPER PRESENTATION",
                 desc: "Present research on zero-trust architectures, cloud security, cryptography, and ransomware defense.",
                 rulesLink: "../cyber/cyber.html#events"
             },
             {
                 num: "02",
-                tag: "INTEL // CHALLENGE",
-                title: "QUIZ (CYBER SECURITY)",
+                tag: "INTEL // QUIZ",
+                title: "CYBER HUNT (TECHNICAL QUIZ)",
                 desc: "Screening on info security fundamentals, network defense protocols, and legendary cyber exploits.",
                 rulesLink: "../cyber/cyber.html#events"
             },
             {
                 num: "03",
                 tag: "WEB // DEFENSE",
-                title: "PHISHING WEBSITE",
+                title: "PHISHGUARD: PHISHING WEBSITE DETECTION",
                 desc: "Inspect spoofed domains, detect fake authentication portals, and evaluate tactical phishing defense.",
                 rulesLink: "../cyber/cyber.html#events"
             },
@@ -2477,8 +2498,15 @@ const deptEventsData = {
             {
                 num: "05",
                 tag: "KEYNOTE // INNOVATION",
-                title: "TECH TALKS",
+                title: "CYBERSECURITY SPOTLIGHT: TECH TALKS",
                 desc: "Present modern cyber warfare frontiers, quantum encryption, ethical hacking, and threat intelligence.",
+                rulesLink: "../cyber/cyber.html#events"
+            },
+            {
+                num: "06",
+                tag: "SECURITY // HACKATHON",
+                title: "CYBERSECURE HACKATHON",
+                desc: "High-intensity cybersecurity sprint building defensive security tools, exploit mitigations, and incident response bots.",
                 rulesLink: "../cyber/cyber.html#events"
             }
         ]
@@ -2486,7 +2514,7 @@ const deptEventsData = {
     eee: {
         code: "06 // EEE ARENA",
         name: "ELECTRICAL & ELECTRONICS ENGINEERING",
-        badge: "5 HIGH-VOLTAGE EVENTS • OCT 2026",
+        badge: "5 HIGH-VOLTAGE EVENTS • 17 OCT 2026",
         arenaUrl: "../eee/eee.html",
         accentColor: "indigo",
         borderClass: "border-indigo-500/50",
@@ -2503,29 +2531,29 @@ const deptEventsData = {
             {
                 num: "02",
                 tag: "PROJECT // EXPO",
-                title: "POWER AND INNOVATION",
+                title: "PROJECT EXPO",
                 desc: "Showcase working power systems, smart metering, motor controllers, and sustainable energy projects.",
                 rulesLink: "../eee/eee.html#events"
             },
             {
                 num: "03",
-                tag: "CIRCUIT // DESIGNING",
-                title: "BRAIN WIRED",
-                desc: "Design complex power logic circuits, PCB layouts, and simulate electrical response characteristics.",
+                tag: "QUIZ // TECHNICAL",
+                title: "TECHNICAL QUIZ",
+                desc: "Speed quiz covering electromagnetism, electric machines, power grid stability, and modern sensors.",
                 rulesLink: "../eee/eee.html#events"
             },
             {
                 num: "04",
-                tag: "CIRCUIT // DEBUGGING",
-                title: "WIRE WARS",
+                tag: "CIRCUIT // WARRIORS",
+                title: "CIRCUIT WARRIORS",
                 desc: "Diagnose short circuits, trace phase anomalies, and debug live electrical bench circuitry.",
                 rulesLink: "../eee/eee.html#events"
             },
             {
                 num: "05",
-                tag: "QUIZ // TECHNICAL",
-                title: "QUIZTRONIC",
-                desc: "Speed quiz covering electromagnetism, electric machines, power grid stability, and modern sensors.",
+                tag: "MACHINES // MASTER",
+                title: "MACHINE MASTER",
+                desc: "Master motor connections, transformer testing, electrical drives, and control machinery challenges.",
                 rulesLink: "../eee/eee.html#events"
             }
         ]
@@ -2533,7 +2561,7 @@ const deptEventsData = {
     mech: {
         code: "07 // MECH ARENA",
         name: "MECHANICAL ENGINEERING",
-        badge: "5 CAD & INDUSTRIAL EVENTS • OCT 2026",
+        badge: "6 CAD & INDUSTRIAL EVENTS • 17 OCT 2026",
         arenaUrl: "../mech/mech.html",
         accentColor: "teal",
         borderClass: "border-teal-500/50",
@@ -2549,30 +2577,37 @@ const deptEventsData = {
             },
             {
                 num: "02",
-                tag: "ENGINEERING // EXPERT",
-                title: "MR. MACHINIST",
-                desc: "Hands-on precision machining, lathe operations, tolerance verification, and metal fabrication.",
+                tag: "ENGINEERING // HACKATHON",
+                title: "MECH HACK X",
+                desc: "Fast-paced engineering challenge designing mechanical mechanisms, robotics, and CAD prototypes.",
                 rulesLink: "../mech/mech.html#events"
             },
             {
                 num: "03",
-                tag: "DRAFTING // ENGINEERING",
-                title: "MASTER DRAFTSMAN",
-                desc: "Demonstrate drafting accuracy, GD&T proficiency, and mechanical drafting challenges.",
+                tag: "PROJECT // EXPO",
+                title: "PROJECT XPLORE",
+                desc: "Showcase innovative mechanical projects, industrial automation, and working machinery models.",
                 rulesLink: "../mech/mech.html#events"
             },
             {
                 num: "04",
-                tag: "COMMUNICATION // TECH TALK",
-                title: "EXTEMPORE",
-                desc: "Spontaneous oratory on industry 4.0, autonomous vehicles, green hydrogen, and aerospace tech.",
+                tag: "POSTER // PRESENTATION",
+                title: "POSTER PRO",
+                desc: "Design and present visual technical posters on future automotive, manufacturing, and green technologies.",
                 rulesLink: "../mech/mech.html#events"
             },
             {
                 num: "05",
-                tag: "QUIZ // TECHNICAL CHALLENGE",
-                title: "BRAIN BOLT",
+                tag: "QUIZ // TECHNICAL",
+                title: "QUIZ-BRAIN BOLT",
                 desc: "Challenging quiz on mechanics of solids, fluid dynamics, manufacturing science, and kinetics.",
+                rulesLink: "../mech/mech.html#events"
+            },
+            {
+                num: "06",
+                tag: "ROCKET // LAUNCH",
+                title: "AQUA ROCKET",
+                desc: "Design, build and launch pressurized water rockets to test aerodynamic efficiency and maximum range.",
                 rulesLink: "../mech/mech.html#events"
             }
         ]
@@ -2580,7 +2615,7 @@ const deptEventsData = {
     sh: {
         code: "08 // S & H ARENA",
         name: "SCIENCE & HUMANITIES",
-        badge: "4 FOUNDATIONAL EVENTS • 10 OCT 2026",
+        badge: "4 FOUNDATIONAL EVENTS • 17 OCT 2026",
         arenaUrl: "../s&h/s&h.html",
         accentColor: "blue",
         borderClass: "border-blue-500/50",
@@ -2611,7 +2646,7 @@ const deptEventsData = {
             {
                 num: "04",
                 tag: "LOGIC // MATHEMATICS",
-                title: "MATH PUZZLES & LOGIC QUIZ",
+                title: "MATH PUZZLES & LOGIC QUIZ (MATHS)",
                 desc: "Test speed, numerical deduction, quantitative aptitude and logical problem-solving across puzzle rounds.",
                 rulesLink: "../s&h/s&h.html#events"
             }
@@ -2728,14 +2763,58 @@ function openEventsModal(deptKey) {
     modal.classList.remove('opacity-0', 'pointer-events-none');
     modal.classList.add('opacity-100', 'pointer-events-auto', 'modal-active');
     document.body.style.overflow = 'hidden';
+    pushEventsModalHistory();
 }
 
-function closeEventsModal() {
+let isEventsModalHistoryPushed = false;
+
+function isHomeMobileView() {
+    return window.innerWidth <= 900 || /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+}
+
+function pushEventsModalHistory() {
+    if (isHomeMobileView() && !isEventsModalHistoryPushed) {
+        isEventsModalHistoryPushed = true;
+        try {
+            history.pushState({ eventsModalOpen: true }, "");
+        } catch (e) {}
+    }
+}
+
+function closeEventsModalInternal() {
     const modal = document.getElementById('events-popup-modal');
     if (!modal) return;
     modal.classList.remove('opacity-100', 'pointer-events-auto', 'modal-active');
     modal.classList.add('opacity-0', 'pointer-events-none');
     document.body.style.overflow = '';
+}
+
+function closeEventsModal() {
+    if (isEventsModalHistoryPushed) {
+        isEventsModalHistoryPushed = false;
+        try {
+            history.back();
+        } catch (e) {}
+    }
+    closeEventsModalInternal();
+}
+
+window.addEventListener('popstate', () => {
+    if (isEventsModalHistoryPushed) {
+        isEventsModalHistoryPushed = false;
+        closeEventsModalInternal();
+    } else {
+        const modal = document.getElementById('events-popup-modal');
+        if (modal && modal.classList.contains('opacity-100') && isHomeMobileView()) {
+            closeEventsModalInternal();
+        }
+    }
+});
+
+if (window.history.state && window.history.state.eventsModalOpen) {
+    try {
+        history.replaceState(null, "");
+    } catch (e) {}
 }
 
 function handleModalBackdropClick(event) {
