@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Live Test AIDS</title>
+</head>
+
+<body>
+  <iframe id="testFrame" src="../ai&ds/aids.html" width="1200" height="900" style="border:none;"></iframe>
+  <pre id="output"></pre>
+
+  <script>
+    const iframe = document.getElementById('testFrame');
+    iframe.onload = () => {
+      const iWin = iframe.contentWindow;
+      const iDoc = iframe.contentDocument;
+
+      // Find all VIEW RULES buttons
+      const buttons = iDoc.querySelectorAll('.event-card .outline-btn');
+      const results = [];
+
+      buttons.forEach((btn, idx) => {
+        btn.click(); // trigger openRulesModal
+        const modal = iDoc.querySelector('#rulesModal .modal');
+        const overlay = iDoc.querySelector('#rulesModal');
+        const closeBtn = modal.querySelector('.close');
+        const eventTitle = iDoc.getElementById('rulesTitle').textContent;
+
+        const modalRect = modal.getBoundingClientRect();
+        const closeRect = closeBtn.getBoundingClientRect();
+        const docW = iDoc.documentElement.scrollWidth;
+        const frameW = iWin.innerWidth;
+
+        results.push({
+          eventIndex: idx + 1,
+          eventTitle: eventTitle,
+          frameWidth: frameW,
+          documentScrollWidth: docW,
+          hasDocHorizontalScroll: docW > frameW,
+          modalWidth: modalRect.width,
+          modalLeft: modalRect.left,
+          modalRight: modalRect.right,
+          modalFitsWithinFrame: modalRect.right <= frameW && modalRect.left >= 0,
+          closeBtnLeft: closeRect.left,
+          closeBtnRight: closeRect.right,
+          closeBtnVisible: closeRect.right <= frameW && closeRect.left >= 0,
+          closeBtnInModal: closeRect.right <= modalRect.right + 2
+        });
+
+        // Close modal
+        iWin.closeModals();
+      });
+
+      document.getElementById('output').textContent = JSON.stringify(results, null, 2);
+    };
+  </script>
+</body>
+
+</html>
