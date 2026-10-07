@@ -560,15 +560,27 @@ main {
 .meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
-  color: #5c7e88;
-  font: 9px 'Share Tech Mono';
-  margin-top: 20px
+  gap: 12px;
+  color: #f1f5f9;
+  font: 600 9.5px 'Share Tech Mono', monospace;
+  margin-top: 20px;
 }
 
 .meta span {
-  border: 1px solid rgba(0, 243, 255, .1);
-  padding: 7px
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.05);
+  color: #f1f5f9;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.meta span:hover {
+  border-color: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .actions {
@@ -579,16 +591,25 @@ main {
 
 .outline-btn {
   padding: 10px 14px;
-  background: transparent;
-  border: 1px solid rgba(0, 243, 255, .3);
-  color: #9ac1ca;
-  font: 700 9px Orbitron;
-  letter-spacing: 1px
+  background: linear-gradient(90deg, #00f3ff, #0077ff);
+  border: 1px solid #00f3ff;
+  color: #001116;
+  font: 800 9px Orbitron, sans-serif;
+  letter-spacing: 1px;
+  clip-path: polygon(0 0, 94% 0, 100% 25%, 100% 100%, 6% 100%, 0 75%);
+  box-shadow: 0 0 22px rgba(0, 243, 255, .35);
+  transition: all 0.25s ease;
+  cursor: pointer;
 }
 
 .outline-btn:hover {
-  border-color: #00f3ff;
-  color: #00f3ff
+  transform: translateY(-2px);
+  box-shadow: 0 0 38px rgba(0, 243, 255, .7);
+}
+
+.outline-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 0 15px rgba(0, 243, 255, .5);
 }
 
 .coordinators {
@@ -624,19 +645,69 @@ main {
 .coord-card div {
   display: flex;
   gap: 10px;
-  margin-top: 22px
+  margin-top: 22px;
 }
 
 .coord-card a {
-  border: 1px solid rgba(0, 243, 255, .2);
-  padding: 10px 13px;
-  font: 10px 'Share Tech Mono';
-  color: #87aeb7
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  font: 700 11px 'Share Tech Mono', monospace;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.coord-card a:hover {
+/* Phone Number Button - Cyber Cyan */
+.coord-card a[href^="tel:"],
+.coord-card a.phone-btn {
   color: #00f3ff;
-  border-color: #00f3ff
+  border: 1px solid #00f3ff;
+  background: rgba(0, 243, 255, 0.08);
+  box-shadow: 0 0 16px rgba(0, 243, 255, 0.2);
+}
+
+.coord-card a[href^="tel:"]:hover,
+.coord-card a.phone-btn:hover {
+  background: #00f3ff;
+  color: #001116;
+  border-color: #00f3ff;
+  box-shadow: 0 0 28px rgba(0, 243, 255, 0.65);
+  transform: translateY(-2px);
+}
+
+.coord-card a[href^="tel:"]:active,
+.coord-card a.phone-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 0 14px rgba(0, 243, 255, 0.4);
+}
+
+/* WhatsApp Button - Vibrant WhatsApp Green */
+.coord-card a[href*="wa.me"],
+.coord-card a.wa-btn {
+  color: #25d366;
+  border: 1px solid #25d366;
+  background: rgba(37, 211, 102, 0.08);
+  box-shadow: 0 0 16px rgba(37, 211, 102, 0.2);
+}
+
+.coord-card a[href*="wa.me"]:hover,
+.coord-card a.wa-btn:hover {
+  background: #25d366;
+  color: #001a0e;
+  border-color: #25d366;
+  box-shadow: 0 0 28px rgba(37, 211, 102, 0.65);
+  transform: translateY(-2px);
+}
+
+.coord-card a[href*="wa.me"]:active,
+.coord-card a.wa-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 0 14px rgba(37, 211, 102, 0.4);
 }
 
 .bottom-hud {
@@ -733,10 +804,11 @@ main {
 
 .rule-meta span {
   padding: 8px 10px;
-  background: rgba(0, 243, 255, .06);
-  border: 1px solid rgba(0, 243, 255, .15);
-  font: 10px 'Share Tech Mono';
-  color: #80a4ae
+  background: rgba(255, 255, 255, .05);
+  border: 1px solid rgba(255, 255, 255, .4);
+  font: 10px 'Share Tech Mono', monospace;
+  color: #f1f5f9;
+  border-radius: 4px;
 }
 
 .modal ul {
@@ -760,7 +832,7 @@ main {
   color: #00f3ff
 }
 
-@media(max-width:900px){.main-nav{display:none}.hero{grid-template-columns:1fr;padding-top:140px;gap:35px}.hero-terminal{min-height:300px;max-width:100%}.events-grid,.coord-grid{grid-template-columns:1fr}.stats{flex-wrap:wrap;gap:8px}.stats>div{min-width:0;flex:1 1 calc(50% - 8px)}.hud-header{padding:10px 14px}.dept-switcher{top:70px;max-width:calc(100% - 16px);padding:4px;gap:4px;-webkit-overflow-scrolling:touch}.dept-switcher a{padding:6px 10px;font-size:10px}.hero h1{font-size:clamp(26px,8vw,52px);line-height:1.05;word-break:break-word;overflow-wrap:break-word}.actions{flex-wrap:wrap;gap:8px}.actions button,.actions a{flex:1 1 auto;text-align:center;justify-content:center}.coord-card div{flex-wrap:wrap;gap:8px}.coord-card a{flex:1 1 auto;text-align:center}}@media(max-width:600px){.hud-status{display:none}.brand{padding:6px 10px;gap:8px}.brand-icon{font-size:22px}.brand strong{font-size:10px;letter-spacing:1px}.brand span{display:block;font-size:7px;letter-spacing:1px;color:#7295a0}.brand small,.brand .brand-sub{font-size:6.5px;letter-spacing:0.8px}.hero{padding-left:14px;padding-right:14px;padding-top:132px}.content-section{padding:50px 14px}.section-heading{margin-bottom:28px}.section-heading h2{font-size:clamp(22px,6vw,36px);word-break:break-word}.stats>div{flex:1 1 100%;min-width:0;padding:10px}.stats b{font-size:20px}.event-card{padding:18px 14px;min-height:auto}.event-card h3{font-size:20px;word-break:break-word}.meta{gap:6px}.meta span{padding:4px 6px;font-size:8px}.bottom-hud{font-size:7px;width:calc(100% - 16px);padding:8px 10px}.bottom-hud span:nth-child(2){display:none}.terminal-lines{width:94%;font-size:10px}.modal-overlay{padding:12px}.modal{padding:20px 14px;max-height:90vh;overflow-y:auto}.modal h2{font-size:20px;word-break:break-word}.modal .close{top:8px;right:10px;font-size:24px}canvas{max-width:100%}}
+@media(max-width:900px){.main-nav{display:none}.hero{grid-template-columns:1fr;padding-top:140px;gap:35px}.hero-terminal{min-height:300px;max-width:100%}.events-grid,.coord-grid{grid-template-columns:1fr}.stats{flex-wrap:wrap;gap:8px}.stats>div{min-width:0;flex:1 1 calc(50% - 8px)}.hud-header{padding:10px 14px}.dept-switcher{top:70px;max-width:calc(100% - 16px);padding:4px;gap:4px;-webkit-overflow-scrolling:touch}.dept-switcher a{padding:6px 10px;font-size:10px}.hero h1{font-size:clamp(26px,8vw,52px);line-height:1.05;word-break:break-word;overflow-wrap:break-word}.actions{flex-wrap:wrap;gap:8px}.actions button,.actions a{flex:1 1 auto;text-align:center;justify-content:center}.coord-card div{flex-wrap:wrap;gap:8px}.coord-card a{flex:1 1 auto;text-align:center}}@media(max-width:600px){.hud-status{display:none}.brand{padding:6px 10px;gap:8px}.brand-icon{font-size:22px}.brand strong{font-size:10px;letter-spacing:1px}.brand span{display:block;font-size:7px;letter-spacing:1px;color:#7295a0}.brand small,.brand .brand-sub{font-size:6.5px;letter-spacing:0.8px}.hero{padding-left:14px;padding-right:14px;padding-top:132px}.content-section{padding:50px 14px}.section-heading{margin-bottom:28px}.section-heading h2{font-size:clamp(22px,6vw,36px);word-break:break-word}.stats>div{flex:1 1 100%;min-width:0;padding:10px}.stats b{font-size:20px}.event-card{padding:18px 14px;min-height:auto}.event-card h3{font-size:20px;word-break:break-word}.meta{gap:6px}.meta span{padding:5px 8px;font-size:8.5px;border:1px solid rgba(255, 255, 255, 0.45);color:#f1f5f9}.bottom-hud{font-size:7px;width:calc(100% - 16px);padding:8px 10px}.bottom-hud span:nth-child(2){display:none}.terminal-lines{width:94%;font-size:10px}.modal-overlay{padding:12px}.modal{padding:20px 14px;max-height:90vh;overflow-y:auto}.modal h2{font-size:20px;word-break:break-word}.modal .close{top:8px;right:10px;font-size:24px}canvas{max-width:100%}}
 
 /* ==========================================
    AI & DS 3D CYBERNETIC ROBOTICS & AI

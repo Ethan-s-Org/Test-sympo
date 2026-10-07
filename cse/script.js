@@ -86,11 +86,43 @@ function openRegisterModal(eventName){
   pushModalHistory();
 }
 
-function openRulesModal(title,time,venue,rules){
+function openRulesModal(title,time,venue,rules,judgingCriteria,coordinator,teamSize){
   document.getElementById("rulesTitle").textContent=title;
-  document.getElementById("rulesTime").textContent="◷ "+time;
+  document.getElementById("rulesTime").textContent="◷ "+(time||"17 OCT 2026");
   document.getElementById("rulesVenue").textContent="⌖ "+venue;
+  const teamEl = document.getElementById("rulesTeam");
+  if (teamEl) {
+    if (teamSize) {
+      teamEl.textContent = "👥 " + teamSize;
+      teamEl.style.display = "inline-block";
+    } else {
+      teamEl.style.display = "none";
+    }
+  }
   document.getElementById("rulesBody").innerHTML=rules.map(r=>`<li>${r}</li>`).join("");
+
+  const criteriaTextEl = document.getElementById("rulesCriteriaText");
+  const criteriaBoxEl = document.getElementById("modalCriteriaBox");
+  if (criteriaTextEl && criteriaBoxEl) {
+    if (judgingCriteria) {
+      criteriaTextEl.textContent = judgingCriteria;
+      criteriaBoxEl.style.display = "block";
+    } else {
+      criteriaBoxEl.style.display = "none";
+    }
+  }
+
+  const coordTextEl = document.getElementById("rulesCoordText");
+  const coordBoxEl = document.getElementById("modalCoordBox");
+  if (coordTextEl && coordBoxEl) {
+    if (coordinator) {
+      coordTextEl.innerHTML = coordinator;
+      coordBoxEl.style.display = "block";
+    } else {
+      coordBoxEl.style.display = "none";
+    }
+  }
+
   document.getElementById("rulesModal").classList.add("open");
   document.body.style.overflow="hidden";
   pushModalHistory();

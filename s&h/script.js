@@ -78,21 +78,118 @@ function closeModalsInternal() {
   document.body.style.overflow = "";
 }
 
-function openRegisterModal(eventName){
+function openRegisterModal(eventName) {
   document.getElementById("registerText").textContent =
     `You are requesting access for ${eventName}. Continue to the official registration portal.`;
-  document.getElementById("registerModal").classList.add("open");
-  document.body.style.overflow="hidden";
+  const regModal = document.getElementById("registerModal");
+  regModal.classList.add("open");
+  const modalBox = regModal.querySelector(".modal");
+  if (modalBox) {
+    modalBox.scrollTop = 0;
+  }
+  document.body.style.overflow = "hidden";
   pushModalHistory();
 }
 
-function openRulesModal(title,time,venue,rules){
-  document.getElementById("rulesTitle").textContent=title;
-  document.getElementById("rulesTime").textContent="◷ "+time;
-  document.getElementById("rulesVenue").textContent="⌖ "+venue;
-  document.getElementById("rulesBody").innerHTML=rules.map(r=>`<li>${r}</li>`).join("");
-  document.getElementById("rulesModal").classList.add("open");
-  document.body.style.overflow="hidden";
+function openRulesModal(
+  title,
+  time,
+  venue,
+  rules,
+  judgingCriteria,
+  coordinator,
+  teamSize,
+  chiefGuest,
+  prize
+) {
+  document.getElementById("rulesTitle").textContent = title;
+
+  const timeEl = document.getElementById("rulesTime");
+  if (timeEl) {
+    if (time) {
+      timeEl.textContent = "◷ " + time;
+      timeEl.style.display = "inline-block";
+    } else {
+      timeEl.style.display = "none";
+    }
+  }
+
+  const venueEl = document.getElementById("rulesVenue");
+  if (venueEl) {
+    if (venue) {
+      venueEl.textContent = "⌖ " + venue;
+      venueEl.style.display = "inline-block";
+    } else {
+      venueEl.style.display = "none";
+    }
+  }
+
+  const teamEl = document.getElementById("rulesTeam");
+  if (teamEl) {
+    if (teamSize) {
+      teamEl.textContent = "👥 " + teamSize;
+      teamEl.style.display = "inline-block";
+    } else {
+      teamEl.style.display = "none";
+    }
+  }
+
+  const rulesBody = document.getElementById("rulesBody");
+  if (rulesBody) {
+    rulesBody.innerHTML = rules.map(r => `<li>${r}</li>`).join("");
+  }
+
+  const criteriaBoxEl = document.getElementById("modalCriteriaBox");
+  const criteriaTextEl = document.getElementById("rulesCriteriaText");
+  if (criteriaBoxEl && criteriaTextEl) {
+    if (judgingCriteria) {
+      criteriaTextEl.innerHTML = judgingCriteria;
+      criteriaBoxEl.style.display = "block";
+    } else {
+      criteriaBoxEl.style.display = "none";
+    }
+  }
+
+  const chiefGuestBoxEl = document.getElementById("modalChiefGuestBox");
+  const chiefGuestTextEl = document.getElementById("rulesChiefGuestText");
+  if (chiefGuestBoxEl && chiefGuestTextEl) {
+    if (chiefGuest) {
+      chiefGuestTextEl.innerHTML = chiefGuest;
+      chiefGuestBoxEl.style.display = "block";
+    } else {
+      chiefGuestBoxEl.style.display = "none";
+    }
+  }
+
+  const prizeBoxEl = document.getElementById("modalPrizeBox");
+  const prizeTextEl = document.getElementById("rulesPrizeText");
+  if (prizeBoxEl && prizeTextEl) {
+    if (prize) {
+      prizeTextEl.innerHTML = prize;
+      prizeBoxEl.style.display = "block";
+    } else {
+      prizeBoxEl.style.display = "none";
+    }
+  }
+
+  const coordBoxEl = document.getElementById("modalCoordBox");
+  const coordTextEl = document.getElementById("rulesCoordText");
+  if (coordBoxEl && coordTextEl) {
+    if (coordinator) {
+      coordTextEl.innerHTML = coordinator;
+      coordBoxEl.style.display = "block";
+    } else {
+      coordBoxEl.style.display = "none";
+    }
+  }
+
+  const rulesModal = document.getElementById("rulesModal");
+  rulesModal.classList.add("open");
+  const modalBox = rulesModal.querySelector(".modal");
+  if (modalBox) {
+    modalBox.scrollTop = 0;
+  }
+  document.body.style.overflow = "hidden";
   pushModalHistory();
 }
 
