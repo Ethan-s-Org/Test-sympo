@@ -2254,44 +2254,44 @@ const deptEventsData = {
         events: [
             {
                 num: "01",
-                tag: "IDEATHON // INNOVATION",
-                title: "FUTURE MINDS (IDEATHON)",
-                desc: "Pitch transformative technological ideas, creative problem-solving concepts and visionary software prototypes.",
+                tag: "TECHNICAL // PRESENTATION",
+                title: "PAPER PRESENTATION",
+                desc: "Abstract submission required before deadline (250–300 words). Focus on emerging tech: AI, ML, Cybersecurity, IoT, Cloud.",
                 rulesLink: "../cse/cse.html#events"
             },
             {
                 num: "02",
                 tag: "HACKATHON // SPRINT",
                 title: "HACKATHON",
-                desc: "Intense software development sprint building rapid, impactful solutions to real-world engineering problem statements.",
+                desc: "Problem statements announced at start. Write code during event duration. Bring your own hardware/laptops.",
                 rulesLink: "../cse/cse.html#events"
             },
             {
                 num: "03",
                 tag: "PROJECT // EXPO",
-                title: "PROJECT EXPO (MOBILE APPLICATION DEVELOPMENT)",
-                desc: "Demonstrate deployed mobile applications across Flutter, React Native, Kotlin, Swift, or Android with live demo.",
+                title: "PROJECT EXPO (MOBILE APP DEVELOPMENT)",
+                desc: "Working mobile applications (Android/iOS/Flutter/React Native) with architecture diagram display and live demo.",
                 rulesLink: "../cse/cse.html#events"
             },
             {
                 num: "04",
                 tag: "AI // POSTER MAKING",
                 title: "SNAP WITH AI (POSTER MAKING)",
-                desc: "Harness generative AI image tools and creative prompt craft to create compelling futuristic technical posters.",
+                desc: "Create high-impact visual posters using AI image generators (Midjourney, DALL-E, Leonardo AI, Canva AI). Prompts logged.",
                 rulesLink: "../cse/cse.html#events"
             },
             {
                 num: "05",
                 tag: "TECH // QUIZ",
                 title: "CYBER HUNT (TECHNICAL QUIZ)",
-                desc: "High-voltage technical quiz testing computer science fundamentals, logic, algorithms, and cybersecurity.",
+                desc: "Round 1 (Prelims): MCQs on Networking, OS, Cryptography, Security. Round 2 (Finals): CTF challenges and log analysis.",
                 rulesLink: "../cse/cse.html#events"
             },
             {
                 num: "06",
                 tag: "PROMPT // BATTLE",
                 title: "AI PROMPT BATTLE (USING CLAUDE AI)",
-                desc: "Compete head-to-head in crafting advanced prompt strategies and multi-turn workflows using Anthropic's Claude AI.",
+                desc: "Identical target output requirements. Competitors write and refine prompts using Claude AI within time limit.",
                 rulesLink: "../cse/cse.html#events"
             }
         ]
@@ -2310,35 +2310,35 @@ const deptEventsData = {
                 num: "01",
                 tag: "RESEARCH // PRESENTATION",
                 title: "PAPER PRESENTATION",
-                desc: "Present research breakthroughs in Artificial Intelligence, Machine Learning, Deep Learning, NLP, and Data Science.",
+                desc: "Participants present a research-based or innovative technical topic before judges using PowerPoint.",
                 rulesLink: "../ai&ds/aids.html#events"
             },
             {
                 num: "02",
-                tag: "PROMPT // PRODUCT",
+                tag: "PROMPT // APP INNOVATION",
                 title: "PRO-PITCH (PROMPT TO APP)",
-                desc: "Harness prompt engineering and rapid AI prototyping to pitch working applications from prompt concepts.",
+                desc: "Participants use AI prompts to develop a functional app based on an app/idea selected through a Lucky Draw.",
                 rulesLink: "../ai&ds/aids.html#events"
             },
             {
                 num: "03",
-                tag: "DATA // VIZ",
-                title: "VIZ CRAFT (DATA VISUALIZATION)",
-                desc: "Transform complex raw data into interactive, intuitive, and insightful visual dashboards and charts.",
+                tag: "DATA // VISUALIZATION",
+                title: "VIZ CRAFT (AI DATA VISUALIZATION)",
+                desc: "Analyze a given dataset and use AI-assisted tools to create meaningful visualizations and communicate useful insights.",
                 rulesLink: "../ai&ds/aids.html#events"
             },
             {
                 num: "04",
                 tag: "MULTI-LANG // CODING",
-                title: "CODE FLEX (MULTI - LANGUAGE CODING CHALLENGE)",
-                desc: "Test versatility and polyglot programming across multiple coding languages under escalating time pressure.",
+                title: "CODE FLEX (MULTI-LANGUAGE CODING CHALLENGE)",
+                desc: "Solve programming problems using a programming language of choice (Python, Java, C, C++) without internet or AI.",
                 rulesLink: "../ai&ds/aids.html#events"
             },
             {
                 num: "05",
                 tag: "INTELLIGENCE // QUIZ",
                 title: "COGNIX (QUIZ)",
-                desc: "Battle through challenging brainteasers, neural network concepts, probability, and data science logic.",
+                desc: "Compete in a 2-round technical quiz covering AI, Data Science, Machine Learning, Deep Learning, and Generative AI.",
                 rulesLink: "../ai&ds/aids.html#events"
             }
         ]
@@ -2411,42 +2411,42 @@ const deptEventsData = {
                 num: "01",
                 tag: "TECHNICAL // PRESENTATION",
                 title: "PAPER PRESENTATION",
-                desc: "Present technical research, VLSI architectures, wireless communication, and embedded hardware innovations.",
+                desc: "Present original research papers and technical concepts on emerging areas of ECE like 5G/6G, VLSI, IoT, and AI/ML.",
                 rulesLink: "../ece/ece.html#events"
             },
             {
                 num: "02",
                 tag: "PROJECT // EXPO",
                 title: "PROJECT EXPO",
-                desc: "Showcase innovative electronic prototypes, IoT controllers, robotics, and hardware engineering projects.",
+                desc: "Showcase innovative practical ECE applications, IoT systems, automation prototypes, and hardware engineering projects.",
                 rulesLink: "../ece/ece.html#events"
             },
             {
                 num: "03",
                 tag: "CIRCUIT // DEBUGGING",
                 title: "CIRCUIT DEBUGGING",
-                desc: "Find circuit errors, analyze electronic schematics and solve real-time hardware debugging challenges.",
+                desc: "Identify and rectify faults in given electronic circuits, testing circuit analysis and troubleshooting speed.",
                 rulesLink: "../ece/ece.html#events"
             },
             {
                 num: "04",
                 tag: "DRONE // INNOVATION",
                 title: "DRONOVA",
-                desc: "Showcase drone flight dynamics, UAV design, quadcopter automation, and aerial technology innovations.",
+                desc: "Perform technical drone and UAV tasks demonstrating flight control, aerial stability, maneuvers, and safety protocols.",
                 rulesLink: "../ece/ece.html#events"
             },
             {
                 num: "05",
-                tag: "TACTICAL // CHALLENGE",
+                tag: "TACTICAL // ESCAPE QUEST",
                 title: "TECH ESCAPE ROOM",
-                desc: "Solve hardware puzzles, decode electronic signals, and unlock encrypted stages to escape the tech lab.",
+                desc: "Solve electronics and technology-based puzzles and challenges under time pressure to unlock stages and escape.",
                 rulesLink: "../ece/ece.html#events"
             },
             {
                 num: "06",
                 tag: "HARDWARE // HACKATHON",
                 title: "ECE HACKATHON",
-                desc: "Intense rapid prototyping sprint developing electronic systems, sensor integrations, and embedded hardware solutions.",
+                desc: "Develop innovative solutions to given ECE problem statements across Embedded Systems, IoT, AI, or Communication.",
                 rulesLink: "../ece/ece.html#events"
             }
         ]
@@ -2566,42 +2566,42 @@ const deptEventsData = {
                 num: "01",
                 tag: "DESIGN // PRESENTATION",
                 title: "PAPER PRESENTATION",
-                desc: "Present advances in thermodynamics, additive manufacturing, robotics, and aerodynamics.",
+                desc: "Present on Next-Gen Technologies: EVs, AI, Robotics, 3D Printing, Smart Manufacturing & Advanced Materials.",
                 rulesLink: "../mech/mech.html#events"
             },
             {
                 num: "02",
                 tag: "ENGINEERING // HACKATHON",
                 title: "MECH HACK X",
-                desc: "Fast-paced engineering challenge designing mechanical mechanisms, robotics, and CAD prototypes.",
+                desc: "Problem statements announced at start. Teams develop solutions and build working prototypes within the time.",
                 rulesLink: "../mech/mech.html#events"
             },
             {
                 num: "03",
                 tag: "PROJECT // EXPO",
                 title: "PROJECT XPLORE",
-                desc: "Showcase innovative mechanical projects, industrial automation, and working machinery models.",
+                desc: "Original, innovative Mechanical Engineering projects and hybrid working models with live demonstration.",
                 rulesLink: "../mech/mech.html#events"
             },
             {
                 num: "04",
                 tag: "POSTER // PRESENTATION",
                 title: "POSTER PRO",
-                desc: "Design and present visual technical posters on future automotive, manufacturing, and green technologies.",
+                desc: "Individual visual technical poster design on on-the-spot topics completed within the allotted duration.",
                 rulesLink: "../mech/mech.html#events"
             },
             {
                 num: "05",
                 tag: "QUIZ // TECHNICAL",
-                title: "QUIZ-BRAIN BOLT",
-                desc: "Challenging quiz on mechanics of solids, fluid dynamics, manufacturing science, and kinetics.",
+                title: "QUIZ - BRAIN BOLT",
+                desc: "Fast-paced technical quiz with time limits, rapid-fire questions, and strict rules testing engineering depth.",
                 rulesLink: "../mech/mech.html#events"
             },
             {
                 num: "06",
                 tag: "ROCKET // LAUNCH",
                 title: "AQUA ROCKET",
-                desc: "Design, build and launch pressurized water rockets to test aerodynamic efficiency and maximum range.",
+                desc: "Design and build water-powered rockets with compressed air, judged on height, duration and accuracy.",
                 rulesLink: "../mech/mech.html#events"
             }
         ]
@@ -2620,28 +2620,28 @@ const deptEventsData = {
                 num: "01",
                 tag: "PHYSICS // PRESENTATION",
                 title: "PAPER PRESENTATION (PHYSICS)",
-                desc: "Present original research concepts, modern physics principles, and experimental discoveries in Applied Physics.",
+                desc: "Original research with meaningful review of a Physics-related topic. Abstract submission required before deadline (150-300 words).",
                 rulesLink: "../s&h/s&h.html#events"
             },
             {
                 num: "02",
-                tag: "CHEMISTRY // DISPLAY",
-                title: "POSTER PRESENTATION (CHEMISTRY)",
-                desc: "Design and present creative scientific posters addressing chemical innovations and green energy.",
+                tag: "LOGIC // MATHEMATICS",
+                title: "MATH PUZZLES & LOGIC - QUIZ (MATHS)",
+                desc: "Round 1 (Prelims): Logical Warm-up objective puzzles. Round 2: Visual & Graph puzzles. Round 3: Rapid Fire Round. Strict ban on search engines and phones.",
                 rulesLink: "../s&h/s&h.html#events"
             },
             {
                 num: "03",
-                tag: "ORATORY // ENGLISH",
-                title: "EXTEMPORE SPEECH (ENGLISH)",
-                desc: "Showcase spontaneous English fluency, articulation, thought leadership and persuasive speaking skills.",
+                tag: "CHEMISTRY // DISPLAY",
+                title: "POSTER PRESENTATION (CHEMISTRY)",
+                desc: "Abstract submission required before deadline (250-300 words). Poster size A0 : 84.1*118.9 cm, Orientation: Portrait (Vertical).",
                 rulesLink: "../s&h/s&h.html#events"
             },
             {
                 num: "04",
-                tag: "LOGIC // MATHEMATICS",
-                title: "MATH PUZZLES & LOGIC QUIZ (MATHS)",
-                desc: "Test speed, numerical deduction, quantitative aptitude and logical problem-solving across puzzle rounds.",
+                tag: "ORATORY // ENGLISH",
+                title: "EXTEMPORE SPEECH (ENGLISH)",
+                desc: "Speech with a clear introduction, body and conclusion. Speech to be audible to the audience and precise to the point.",
                 rulesLink: "../s&h/s&h.html#events"
             }
         ]

@@ -239,24 +239,17 @@ function closeModalsInternal() {
 ========================================================= */
 
 function openRegisterModal(eventName) {
-
-  document.getElementById(
-    "registerText"
-  ).textContent =
+  document.getElementById("registerText").textContent =
     `You are requesting access for ${eventName}. Continue to the official registration portal.`;
-
-
-  document.getElementById(
-    "registerModal"
-  ).classList.add("open");
-
-
-  document.body.style.overflow =
-    "hidden";
-
+  const regModal = document.getElementById("registerModal");
+  regModal.classList.add("open");
+  const modalBox = regModal.querySelector(".modal");
+  if (modalBox) {
+    modalBox.scrollTop = 0;
+  }
+  document.body.style.overflow = "hidden";
   pushModalHistory();
 }
-
 
 /* =========================================================
    RULES MODAL
@@ -266,44 +259,76 @@ function openRulesModal(
   title,
   time,
   venue,
-  rules
+  rules,
+  judgingCriteria,
+  coordinator,
+  teamSize
 ) {
+  document.getElementById("rulesTitle").textContent = title;
 
-  document.getElementById(
-    "rulesTitle"
-  ).textContent = title;
+  const timeEl = document.getElementById("rulesTime");
+  if (timeEl) {
+    if (time) {
+      timeEl.textContent = "◷ " + time;
+      timeEl.style.display = "inline-block";
+    } else {
+      timeEl.style.display = "none";
+    }
+  }
 
+  const venueEl = document.getElementById("rulesVenue");
+  if (venueEl) {
+    if (venue) {
+      venueEl.textContent = "⌖ " + venue;
+      venueEl.style.display = "inline-block";
+    } else {
+      venueEl.style.display = "none";
+    }
+  }
 
-  document.getElementById(
-    "rulesTime"
-  ).textContent =
-    "◷ " + time;
+  const teamEl = document.getElementById("rulesTeam");
+  if (teamEl) {
+    if (teamSize) {
+      teamEl.textContent = "👥 " + teamSize;
+      teamEl.style.display = "inline-block";
+    } else {
+      teamEl.style.display = "none";
+    }
+  }
 
+  document.getElementById("rulesBody").innerHTML =
+    rules.map(r => `<li>${r}</li>`).join("");
 
-  document.getElementById(
-    "rulesVenue"
-  ).textContent =
-    "⌖ " + venue;
+  const criteriaTextEl = document.getElementById("rulesCriteriaText");
+  const criteriaBoxEl = document.getElementById("modalCriteriaBox");
+  if (criteriaTextEl && criteriaBoxEl) {
+    if (judgingCriteria) {
+      criteriaTextEl.innerHTML = judgingCriteria;
+      criteriaBoxEl.style.display = "block";
+    } else {
+      criteriaBoxEl.style.display = "none";
+    }
+  }
 
+  const coordTextEl = document.getElementById("rulesCoordText");
+  const coordBoxEl = document.getElementById("modalCoordBox");
+  if (coordTextEl && coordBoxEl) {
+    if (coordinator) {
+      coordTextEl.innerHTML = coordinator;
+      coordBoxEl.style.display = "block";
+    } else {
+      coordBoxEl.style.display = "none";
+    }
+  }
 
-  document.getElementById(
-    "rulesBody"
-  ).innerHTML =
-    rules
-      .map(
-        r => `<li>${r}</li>`
-      )
-      .join("");
+  const rulesModal = document.getElementById("rulesModal");
+  rulesModal.classList.add("open");
+  const modalBox = rulesModal.querySelector(".modal");
+  if (modalBox) {
+    modalBox.scrollTop = 0;
+  }
 
-
-  document.getElementById(
-    "rulesModal"
-  ).classList.add("open");
-
-
-  document.body.style.overflow =
-    "hidden";
-
+  document.body.style.overflow = "hidden";
   pushModalHistory();
 }
 
