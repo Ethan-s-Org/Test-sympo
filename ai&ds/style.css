@@ -102,7 +102,7 @@ button {
 .brand span {
   font-size: 8px;
   letter-spacing: 2px;
-  color: #7295a0
+  color: #e2e8f0
 }
 
 .brand small,
@@ -218,7 +218,7 @@ main {
 
 .back-link {
   font: 11px 'Share Tech Mono';
-  color: #5d7e89;
+  color: #e2e8f0;
   letter-spacing: 1px
 }
 
@@ -258,7 +258,7 @@ main {
 
 .hero h1 em {
   font-style: normal;
-  color: #607983
+  color: #e2e8f0
 }
 
 .hero h1 span {
@@ -268,7 +268,7 @@ main {
 
 .hero-description {
   max-width: 650px;
-  color: #9cb4bc;
+  color: #f1f5f9;
   font-size: 17px;
   line-height: 1.6
 }
@@ -296,7 +296,7 @@ main {
 .stats small {
   display: block;
   margin-top: 5px;
-  color: #5f858f;
+  color: #e2e8f0;
   font: 9px 'Share Tech Mono';
   letter-spacing: 1px
 }
@@ -352,7 +352,7 @@ main {
   border-bottom: 1px solid rgba(0, 243, 255, .12);
   font: 9px 'Share Tech Mono';
   letter-spacing: 1.5px;
-  color: #5d8792
+  color: #e2e8f0
 }
 
 .terminal-live {
@@ -424,7 +424,7 @@ main {
 .terminal-lines {
   width: 80%;
   font: 11px/1.8 'Share Tech Mono';
-  color: #6c8b94
+  color: #e2e8f0
 }
 
 .terminal-lines b {
@@ -479,7 +479,7 @@ main {
 .section-heading p {
   max-width: 700px;
   margin: 13px auto;
-  color: #6f8992;
+  color: #f1f5f9;
   font-size: 15px
 }
 
@@ -534,7 +534,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #50717b;
+  color: #e2e8f0;
   font: 9px 'Share Tech Mono';
   letter-spacing: 1.5px
 }
@@ -556,7 +556,7 @@ main {
 }
 
 .event-card p {
-  color: #78929a;
+  color: #f1f5f9;
   line-height: 1.55;
   font-size: 14px
 }
@@ -643,7 +643,7 @@ main {
 }
 
 .coord-card p {
-  color: #708992
+  color: #f1f5f9
 }
 
 .coord-card div {
@@ -726,7 +726,7 @@ main {
   display: flex;
   justify-content: space-between;
   font: 9px 'Share Tech Mono';
-  color: #66838d;
+  color: #e2e8f0;
   letter-spacing: 1px
 }
 
@@ -805,7 +805,7 @@ main {
   top: 14px;
   background: none;
   border: 0;
-  color: #66838d;
+  color: #e2e8f0;
   font-size: 28px;
   line-height: 1;
   cursor: pointer;
@@ -842,7 +842,7 @@ main {
 }
 
 .modal p {
-  color: #8da5ac;
+  color: #f1f5f9;
   line-height: 1.6;
   word-break: break-word;
   overflow-wrap: break-word;
@@ -854,7 +854,7 @@ main {
   background: rgba(0, 243, 255, .05);
   border: 1px solid rgba(0, 243, 255, .12);
   margin: 20px 0;
-  color: #7d9aa2;
+  color: #f1f5f9;
   font: 11px 'Share Tech Mono';
   width: 100%;
   max-width: 100%;
@@ -915,7 +915,7 @@ main {
 .modal li {
   padding: 9px 0 9px 20px;
   border-bottom: 1px solid rgba(255, 255, 255, .05);
-  color: #c4d9e0;
+  color: #f1f5f9;
   font-size: 13.5px;
   line-height: 1.55;
   position: relative;
@@ -1106,7 +1106,7 @@ main {
   .brand{padding:6px 10px;gap:8px}
   .brand-icon{font-size:22px}
   .brand strong{font-size:10px;letter-spacing:1px}
-  .brand span{display:block;font-size:7px;letter-spacing:1px;color:#7295a0}
+  .brand span{display:block;font-size:7px;letter-spacing:1px;color: #e2e8f0}
   .brand small,.brand .brand-sub{font-size:6.5px;letter-spacing:0.8px}
   .hero{padding-left:14px;padding-right:14px;padding-top:132px}
   .content-section{padding:50px 14px}

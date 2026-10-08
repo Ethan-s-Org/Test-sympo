@@ -2743,7 +2743,7 @@ function openEventsModal(deptKey) {
                             <span class="text-[10px] font-mono-tech ${theme.tag} uppercase tracking-widest px-2 py-0.5 rounded border">${ev.tag}</span>
                         </div>
                         <h4 class="text-sm sm:text-base font-orbitron font-bold text-white group-hover:text-slate-200 transition-colors mt-1.5">${ev.title}</h4>
-                        <p class="text-xs text-slate-400 font-mono-tech line-clamp-2 mt-1 leading-relaxed">${ev.desc}</p>
+                        <p class="text-xs text-slate-100 font-mono-tech line-clamp-2 mt-1 leading-relaxed">${ev.desc}</p>
                     </div>
                 </div>
                 <a href="${ev.rulesLink}" class="shrink-0 self-end sm:self-center px-3.5 py-1.5 rounded-lg ${theme.detailBtn} border text-xs font-mono-tech font-bold transition-all flex items-center gap-1.5 shadow-sm">
