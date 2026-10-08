@@ -48,7 +48,7 @@
          TOP HUD
     ========================================================== -->
 
-    <header
+    <header id="top-hud-header"
         class="fixed top-0 left-0 right-0 z-30 pointer-events-none p-2.5 sm:p-4 md:p-6 flex flex-col items-center md:flex-row md:justify-between md:items-start gap-2">
 
 
@@ -56,7 +56,7 @@
              R P SARATHY INSTITUTE (CENTER ON DESKTOP, TOP ON MOBILE)
         ====================================================== -->
 
-        <div
+        <div id="hud-college-header"
             class="order-1 md:order-none md:absolute md:left-1/2 md:-translate-x-1/2 pointer-events-auto flex items-center gap-2 sm:gap-3 glass-panel px-3.5 sm:px-5 py-1.5 sm:py-2.5 rounded-xl max-w-[95vw] sm:max-w-none">
 
 
@@ -100,7 +100,7 @@
              COUNTDOWN TIMER (LEFT ON DESKTOP, SECOND ON MOBILE)
         ====================================================== -->
 
-        <div
+        <div id="hud-countdown-box"
             class="order-2 md:order-none pointer-events-auto glass-panel px-3.5 sm:px-5 py-1.5 sm:py-2.5 rounded-xl text-center">
 
             <span class="text-[9px] sm:text-[10px] font-mono-tech tracking-widest text-slate-100">
@@ -159,12 +159,12 @@
         ====================================================== -->
 
         <div id="scroll-prompt"
-            class="mx-auto flex flex-col items-center gap-1 text-cyan-400 animate-bounce cursor-pointer pointer-events-auto">
+            class="mx-auto flex flex-col items-center gap-1 text-white animate-bounce cursor-pointer pointer-events-auto">
 
 
             <span class="text-[9px] sm:text-[10px] tracking-widest font-mono-tech uppercase">
 
-                Scroll to Pilot
+                SCROLL DOWN
 
             </span>
 
@@ -276,22 +276,13 @@
 
                 <!-- Buttons -->
 
-                <div class="mt-6 sm:mt-8 flex flex-wrap gap-3 sm:gap-4 justify-center items-center w-full sm:w-auto">
+                <div class="mt-6 sm:mt-8 flex justify-center items-center w-full sm:w-auto">
 
 
                     <button onclick="jumpToSection(1)"
                         class="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-black font-orbitron font-bold text-xs sm:text-sm tracking-wider uppercase shadow-[0_0_25px_rgba(0,240,255,0.6)] hover:shadow-[0_0_40px_rgba(0,240,255,0.9)] hover:scale-105 transition-all">
 
                         EXPLORE DEPARTMENTS
-
-                    </button>
-
-
-
-                    <button onclick="jumpToSection(9)"
-                        class="w-full sm:w-auto px-6 sm:px-7 py-3 sm:py-3.5 rounded-xl glass-panel text-cyan-300 hover:text-white border border-cyan-500/40 font-orbitron font-semibold text-xs sm:text-sm tracking-wider uppercase transition-all hover:border-cyan-300">
-
-                        ⚡REGISTER NOW
 
                     </button>
 
@@ -333,11 +324,7 @@
 
                     </a>
 
-                    <a href="../cse/cse.html"
-                        class="text-slate-200 hover:text-cyan-300 transition-colors text-[11px] font-mono-tech flex items-center gap-1">
-                        <span>LAUNCH ARENA</span>
-                        <span>→</span>
-                    </a>
+
 
                 </div>
 
@@ -445,11 +432,7 @@
 
                     </a>
 
-                    <a href="../ai&ds/aids.html"
-                        class="text-slate-200 hover:text-yellow-300 transition-colors text-[11px] font-mono-tech flex items-center gap-1">
-                        <span>LAUNCH ARENA</span>
-                        <span>→</span>
-                    </a>
+
 
                 </div>
 
@@ -554,11 +537,7 @@
 
                     </a>
 
-                    <a href="../it/it.html"
-                        class="text-slate-200 hover:text-blue-300 transition-colors text-[11px] font-mono-tech flex items-center gap-1">
-                        <span>LAUNCH ARENA</span>
-                        <span>→</span>
-                    </a>
+
 
                 </div>
 
@@ -668,11 +647,7 @@
 
                     </a>
 
-                    <a href="../ece/ece.html"
-                        class="text-slate-200 hover:text-red-300 transition-colors text-[11px] font-mono-tech flex items-center gap-1">
-                        <span>LAUNCH ARENA</span>
-                        <span>→</span>
-                    </a>
+
 
                 </div>
 
@@ -775,11 +750,7 @@
                             class="opacity-70 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all text-[10px]">↗</span>
                     </a>
 
-                    <a href="../cyber/cyber.html"
-                        class="text-slate-200 hover:text-orange-300 transition-colors text-[11px] font-mono-tech flex items-center gap-1">
-                        <span>LAUNCH ARENA</span>
-                        <span>→</span>
-                    </a>
+
 
                 </div>
 
@@ -887,11 +858,7 @@
 
                     </a>
 
-                    <a href="../eee/eee.html"
-                        class="text-slate-200 hover:text-indigo-300 transition-colors text-[11px] font-mono-tech flex items-center gap-1">
-                        <span>LAUNCH ARENA</span>
-                        <span>→</span>
-                    </a>
+
 
                 </div>
 
@@ -999,11 +966,7 @@
 
                     </a>
 
-                    <a href="../mech/mech.html"
-                        class="text-slate-200 hover:text-teal-300 transition-colors text-[11px] font-mono-tech flex items-center gap-1">
-                        <span>LAUNCH ARENA</span>
-                        <span>→</span>
-                    </a>
+
 
                 </div>
 
@@ -1111,11 +1074,7 @@
 
                     </a>
 
-                    <a href="../s&h/s&h.html"
-                        class="text-slate-200 hover:text-blue-300 transition-colors text-[11px] font-mono-tech flex items-center gap-1">
-                        <span>LAUNCH ARENA</span>
-                        <span>→</span>
-                    </a>
+
 
                 </div>
 
@@ -1264,20 +1223,6 @@
                         <span class="text-[10px] text-slate-200">Grand Finale</span>
                     </div>
                 </div>
-
-
-                <div class="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
-
-
-                    <button id="warp-btn"
-                        class="w-full sm:w-auto px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl bg-gradient-to-r from-cyan-400 via-teal-400 to-indigo-500 text-slate-950 font-orbitron font-black text-sm sm:text-base tracking-widest uppercase shadow-[0_0_30px_#00f0ff] hover:shadow-[0_0_60px_#00f0ff] hover:scale-105 active:scale-95 transition-all">
-
-                        ⚡ REGISTER HERE
-
-                    </button>
-
-                </div>
-
 
             </div>
 

@@ -2356,43 +2356,43 @@ const deptEventsData = {
             {
                 num: "01",
                 tag: "RESEARCH // PRESENTATION",
-                title: "PAPER PRESENTATION: INNO PAPERS",
-                desc: "The Spectrum of Innovation — Present original papers in cloud computing, DevOps, web technologies, and modern IT.",
+                title: "PAPER PRESENTATION: INNOPAPERS",
+                desc: "The Spectrum of Innovation — Choose an innovative topic, prepare informative slides, and present original paper.",
                 rulesLink: "../it/it.html#events"
             },
             {
                 num: "02",
                 tag: "AI // PROMPT BATTLE",
                 title: "CLAUDE PROMPT BATTLE",
-                desc: "Harness Claude AI with strategic prompt engineering to generate optimal code, problem solutions, and creative outputs.",
+                desc: "Create optimal prompts for Claude AI to solve specific tasks and generate required solutions under timed scoring.",
                 rulesLink: "../it/it.html#events"
             },
             {
                 num: "03",
                 tag: "WEB // ARCHITECTURE",
                 title: "WEB ARCHITECTS",
-                desc: "Architect and build modern, responsive, high-performance web applications using cutting-edge front-end paradigms.",
+                desc: "Create a website during the event based on the announced theme within 45–60 minutes, evaluated on UI, creativity, and responsiveness.",
                 rulesLink: "../it/it.html#events"
             },
             {
                 num: "04",
                 tag: "CODE // DEBUGGING",
-                title: "CODE DEBUGGING",
-                desc: "Unravel spaghetti code, locate compilation and runtime faults, and optimize degraded codebases under pressure.",
+                title: "CODE DEBUGGING (BUG HUNT)",
+                desc: "Compete across Round 1 (Preliminary debugging) and Round 2 (Advanced debugging) in C, C++, Java, or Python.",
                 rulesLink: "../it/it.html#events"
             },
             {
                 num: "05",
                 tag: "PITCH // DISPLAY",
                 title: "POSTER PITCH",
-                desc: "Pitch creative technical concepts and visionary IT innovations through compelling visual infographics.",
+                desc: "Present creative technical posters on chosen topics with clear information, diagrams, and visual designs.",
                 rulesLink: "../it/it.html#events"
             },
             {
                 num: "06",
                 tag: "PROJECT // SHOWCASE",
                 title: "PROJECT PRESENTATION",
-                desc: "Demonstrate live working IT software systems, enterprise dashboards, and mobile or web applications.",
+                desc: "Present innovative and original projects with PPT presentation (5–7 mins) followed by Q&A (2–3 mins).",
                 rulesLink: "../it/it.html#events"
             }
         ]
@@ -2465,42 +2465,42 @@ const deptEventsData = {
                 num: "01",
                 tag: "RESEARCH // PRESENTATION",
                 title: "CYBER PAPER PRESENTATION",
-                desc: "Present research on zero-trust architectures, cloud security, cryptography, and ransomware defense.",
+                desc: "Abstract submission required before deadline (250–300 words). Focus on cybersecurity, ethical hacking, network security, forensics, cryptography, or privacy.",
                 rulesLink: "../cyber/cyber.html#events"
             },
             {
                 num: "02",
                 tag: "INTEL // QUIZ",
                 title: "CYBER HUNT (TECHNICAL QUIZ)",
-                desc: "Screening on info security fundamentals, network defense protocols, and legendary cyber exploits.",
+                desc: "Round 1 (CRT & technical), Round 2 (CRT & technical), and Round 3 Rapid Fire with 10 questions to be answered within 100 seconds.",
                 rulesLink: "../cyber/cyber.html#events"
             },
             {
                 num: "03",
-                tag: "WEB // DEFENSE",
+                tag: "DEFENSE // DETECTION",
                 title: "PHISHGUARD: PHISHING WEBSITE DETECTION",
-                desc: "Inspect spoofed domains, detect fake authentication portals, and evaluate tactical phishing defense.",
+                desc: "3 levels of phishing identification. Participants analyze messages, emails, websites, or screenshots to identify Phishing vs Legitimate.",
                 rulesLink: "../cyber/cyber.html#events"
             },
             {
                 num: "04",
                 tag: "TACTICAL // SURVIVAL",
-                title: "CYBER ESCAPE ROOM",
-                desc: "Crack encrypted ciphers, escalate terminal privileges, decode steganography, and escape before lockdown!",
+                title: "CYBER ESCAPE ROOM: INCIDENT RESPONSE CHALLENGE",
+                desc: "Teams solve a sequence of cybersecurity puzzles (password hygiene, phishing, log analysis, cryptography) to unlock the final code.",
                 rulesLink: "../cyber/cyber.html#events"
             },
             {
                 num: "05",
                 tag: "KEYNOTE // INNOVATION",
                 title: "CYBERSECURITY SPOTLIGHT: TECH TALKS",
-                desc: "Present modern cyber warfare frontiers, quantum encryption, ethical hacking, and threat intelligence.",
+                desc: "5–7 minute presentation followed by 2–3 minutes Q&A on AI security, cloud security, digital forensics, or privacy.",
                 rulesLink: "../cyber/cyber.html#events"
             },
             {
                 num: "06",
                 tag: "SECURITY // HACKATHON",
                 title: "CYBERSECURE HACKATHON",
-                desc: "High-intensity cybersecurity sprint building defensive security tools, exploit mitigations, and incident response bots.",
+                desc: "Cybersecurity problem statements announced at start; teams build working prototypes and defenses on authorized systems.",
                 rulesLink: "../cyber/cyber.html#events"
             }
         ]

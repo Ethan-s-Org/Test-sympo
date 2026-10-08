@@ -277,7 +277,7 @@ function openRegisterModal(eventName) {
     );
 
   registerText.textContent =
-    `You are requesting access for ${eventName}. Continue to the official Mechanical Engineering registration portal.`;
+    `Registration details for ${eventName}. Registrations will be conducted on-spot at the venue desk.`;
 
   const regModal = document.getElementById("registerModal");
   regModal.classList.add("open");
