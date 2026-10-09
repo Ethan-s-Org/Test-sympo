@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
         rel="stylesheet">
 
     <!-- Custom CSS -->
@@ -30,8 +30,64 @@
 </head>
 
 
-<body class="relative bg-[#020208] text-slate-100 overflow-x-hidden">
+<body class="relative bg-[#020208] text-slate-100 overflow-x-hidden loading-active">
 
+    <!-- =========================================================
+         RPSIT PREMIUM ANIMATED LOADING SCREEN
+    ========================================================== -->
+    <div id="loading-screen" class="loading-screen" aria-label="Loading RPSIT Techfest">
+        <!-- Ambient glowing backdrops -->
+        <div class="ambient-glow glow-primary" aria-hidden="true"></div>
+        <div class="ambient-glow glow-accent" aria-hidden="true"></div>
+        <div class="ambient-glow glow-center" aria-hidden="true"></div>
+
+        <!-- Floating ambient particles -->
+        <div class="particles" aria-hidden="true">
+            <span class="particle p1"></span>
+            <span class="particle p2"></span>
+            <span class="particle p3"></span>
+            <span class="particle p4"></span>
+            <span class="particle p5"></span>
+            <span class="particle p6"></span>
+        </div>
+
+        <!-- Centered Loader Card / Unit -->
+        <div class="loader-content">
+            <!-- Animated Logo Container -->
+            <div class="logo-wrapper">
+                <!-- The Official Logo Image with Floating Animation -->
+                <div class="logo-frame">
+                    <img class="images-logo-removebg-preview-1" src="assets/images-logo-removebg-preview-10.png"
+                        onerror="this.src='../loading screen animation/images-logo-removebg-preview-10.png'"
+                        alt="RPSIT Official Logo" />
+                    <div class="logo-shine" aria-hidden="true"></div>
+                </div>
+            </div>
+
+            <!-- Typography / Brand Name -->
+            <div class="brand-block">
+                <h1 class="rpsit">RPSIT</h1>
+                <span class="tagline">INFINITE TECHFEST' 26</span>
+            </div>
+
+            <!-- Modern Loading Progress Bar & Status -->
+            <div class="loader-status" role="status" aria-live="polite">
+                <div class="progress-track">
+                    <div class="progress-bar">
+                        <span class="progress-glow"></span>
+                    </div>
+                </div>
+                <div class="status-meta">
+                    <span class="status-label">INITIALIZING</span>
+                    <span class="status-dots">
+                        <span class="dot">.</span>
+                        <span class="dot">.</span>
+                        <span class="dot">.</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- =========================================================
          3D THREE.JS CANVAS
@@ -48,7 +104,7 @@
          TOP HUD
     ========================================================== -->
 
-    <header id="top-hud-header"
+    <header
         class="fixed top-0 left-0 right-0 z-30 pointer-events-none p-2.5 sm:p-4 md:p-6 flex flex-col items-center md:flex-row md:justify-between md:items-start gap-2">
 
 
@@ -56,7 +112,7 @@
              R P SARATHY INSTITUTE (CENTER ON DESKTOP, TOP ON MOBILE)
         ====================================================== -->
 
-        <div id="hud-college-header"
+        <div
             class="order-1 md:order-none md:absolute md:left-1/2 md:-translate-x-1/2 pointer-events-auto flex items-center gap-2 sm:gap-3 glass-panel px-3.5 sm:px-5 py-1.5 sm:py-2.5 rounded-xl max-w-[95vw] sm:max-w-none">
 
 
@@ -100,7 +156,7 @@
              COUNTDOWN TIMER (LEFT ON DESKTOP, SECOND ON MOBILE)
         ====================================================== -->
 
-        <div id="hud-countdown-box"
+        <div
             class="order-2 md:order-none pointer-events-auto glass-panel px-3.5 sm:px-5 py-1.5 sm:py-2.5 rounded-xl text-center">
 
             <span class="text-[9px] sm:text-[10px] font-mono-tech tracking-widest text-slate-100">

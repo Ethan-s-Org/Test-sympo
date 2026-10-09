@@ -239,6 +239,50 @@
   left: 0 !important;
 }
 
+/* Registration Popup Enhancements */
+.dept-reg-info {
+  margin: 18px 0 14px;
+  padding: 16px 18px;
+  background: rgba(0, 243, 255, 0.05);
+  border: 1px solid rgba(0, 243, 255, 0.2);
+  border-left: 3px solid #00f3ff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dept-reg-info .reg-fee-item {
+  margin: 0;
+  color: #e8fbff;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 13px;
+  line-height: 1.55;
+  letter-spacing: 0.3px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.dept-reg-note {
+  margin: 0 0 20px 0;
+  padding: 12px 16px;
+  background: rgba(255, 180, 0, 0.06);
+  border: 1px solid rgba(255, 180, 0, 0.25);
+  border-left: 3px solid #ffb400;
+  border-radius: 6px;
+  color: #fff4db;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 12px;
+  line-height: 1.55;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.dept-reg-note strong {
+  color: #ffb400;
+  letter-spacing: 0.5px;
+}
+
 /* Mobile Modal Refinements */
 @media (max-width: 600px) {
   .modal-overlay {
@@ -249,6 +293,21 @@
     max-height: calc(100vh - 24px);
     max-height: calc(100dvh - 24px);
     border-radius: 12px;
+  }
+  .dept-reg-info {
+    padding: 12px 14px;
+    margin: 14px 0 12px;
+    gap: 8px;
+  }
+  .dept-reg-info .reg-fee-item {
+    font-size: 11.5px;
+    line-height: 1.45;
+  }
+  .dept-reg-note {
+    padding: 10px 12px;
+    font-size: 11px;
+    margin-bottom: 16px;
+    line-height: 1.45;
   }
   .modal-rules-heading {
     font-size: 10px;

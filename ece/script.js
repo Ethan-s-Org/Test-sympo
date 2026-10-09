@@ -239,8 +239,10 @@ function closeModalsInternal() {
 ========================================================= */
 
 function openRegisterModal(eventName) {
-  document.getElementById("registerText").textContent =
-    `Registration details for ${eventName}. Registrations will be conducted on-spot at the venue desk.`;
+  const regTextEl = document.getElementById("registerText");
+  if (regTextEl) {
+    regTextEl.textContent = "";
+  }
   const regModal = document.getElementById("registerModal");
   regModal.classList.add("open");
   const modalBox = regModal.querySelector(".modal");
@@ -920,4 +922,114 @@ document
   } else {
     start();
   }
+})();
+
+// ==========================================
+// MOBILE DEPARTMENT NAVIGATION SCROLL PRESERVATION
+// ==========================================
+(function initMobileDeptNav() {
+  function getDeptSwitcher() {
+    return document.querySelector('.dept-switcher');
+  }
+
+  function positionDeptNav() {
+    if (window.innerWidth > 900) return;
+    const switcher = getDeptSwitcher();
+    if (!switcher) return;
+
+    const maxScroll = switcher.scrollWidth - switcher.clientWidth;
+    if (maxScroll <= 0) return;
+
+    const activeTab = switcher.querySelector('a.active') || switcher.querySelector('.active');
+    if (!activeTab) return;
+
+    const savedRaw = sessionStorage.getItem('deptNavScrollLeft');
+    let currentScroll = switcher.scrollLeft;
+    if (savedRaw !== null) {
+      const parsed = parseFloat(savedRaw);
+      if (!isNaN(parsed)) {
+        currentScroll = Math.max(0, Math.min(parsed, maxScroll));
+      }
+    }
+
+    const tabLeft = activeTab.offsetLeft;
+    const tabWidth = activeTab.offsetWidth;
+    const tabRight = tabLeft + tabWidth;
+    const pad = 16;
+
+    const visibleLeft = currentScroll + pad;
+    const visibleRight = currentScroll + switcher.clientWidth - pad;
+
+    let targetScroll = currentScroll;
+
+    if (tabLeft < visibleLeft) {
+      targetScroll = tabLeft - pad;
+    } else if (tabRight > visibleRight) {
+      targetScroll = tabRight - switcher.clientWidth + pad;
+    } else {
+      targetScroll = currentScroll;
+    }
+
+    targetScroll = Math.max(0, Math.min(targetScroll, maxScroll));
+
+    const prevBehavior = switcher.style.scrollBehavior;
+    switcher.style.scrollBehavior = 'auto';
+    switcher.scrollLeft = targetScroll;
+    switcher.style.scrollBehavior = prevBehavior;
+
+    sessionStorage.setItem('deptNavScrollLeft', String(targetScroll));
+  }
+
+  function attachDeptNavEvents() {
+    const switcher = getDeptSwitcher();
+    if (!switcher) return;
+
+    switcher.addEventListener(
+      'scroll',
+      () => {
+        if (window.innerWidth <= 900) {
+          sessionStorage.setItem('deptNavScrollLeft', String(switcher.scrollLeft));
+        }
+      },
+      { passive: true }
+    );
+
+    switcher.addEventListener('click', (e) => {
+      const link = e.target.closest('a');
+      if (link) {
+        if (link.getAttribute('href') === '#' || link.getAttribute('href') === '') {
+          e.preventDefault();
+        }
+        if (window.innerWidth <= 900) {
+          sessionStorage.setItem('deptNavScrollLeft', String(switcher.scrollLeft));
+        }
+      }
+    });
+
+    document.addEventListener('click', (e) => {
+      const homeLink = e.target.closest('a[href*="home page"], a.back-link, a.brand');
+      if (homeLink) {
+        sessionStorage.removeItem('deptNavScrollLeft');
+      }
+    });
+
+    positionDeptNav();
+    requestAnimationFrame(positionDeptNav);
+    setTimeout(positionDeptNav, 50);
+    setTimeout(positionDeptNav, 150);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', attachDeptNavEvents);
+  } else {
+    attachDeptNavEvents();
+  }
+
+  window.addEventListener('load', positionDeptNav);
+  window.addEventListener('pageshow', positionDeptNav);
+  window.addEventListener('resize', () => {
+    if (window.innerWidth <= 900) {
+      positionDeptNav();
+    }
+  });
 })();

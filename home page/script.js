@@ -2823,3 +2823,49 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+// Clear any stored mobile department switcher scroll when returning to home page
+try {
+    sessionStorage.removeItem('deptNavScrollLeft');
+} catch (e) {}
+
+// ========================================================
+// RPSIT HOME PAGE LOADING SCREEN CONTROLLER
+// ========================================================
+(function initLoadingScreen() {
+    const loader = document.getElementById('loading-screen');
+    if (!loader) return;
+
+    // Minimum display time (1.8s) so visitors experience the futuristic loading animation
+    const minDisplayTime = 1800;
+    const startTime = performance.now();
+    let isDismissed = false;
+
+    function dismissLoader() {
+        if (isDismissed) return;
+        isDismissed = true;
+
+        const elapsedTime = performance.now() - startTime;
+        const remainingTime = Math.max(0, minDisplayTime - elapsedTime);
+
+        setTimeout(() => {
+            loader.classList.add('loaded');
+            document.body.classList.remove('loading-active');
+
+            // Deactivate and remove from rendering after fade-out transition
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 750);
+        }, remainingTime);
+    }
+
+    if (document.readyState === 'complete') {
+        dismissLoader();
+    } else {
+        window.addEventListener('load', dismissLoader);
+        // Fallback safety timeout so slow asset loading never leaves user stuck
+        setTimeout(dismissLoader, 4500);
+    }
+})();
+
+
+
